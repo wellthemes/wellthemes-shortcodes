@@ -171,8 +171,8 @@
 		// credits
 		getInfo: function () {
 			return {
-				longname : "Well Themes Shortcodes",
-				author : 'Well Themes',
+				longname : "WellThemes Shortcodes",
+				author : 'WellThemes',
 				authorurl : 'http://wellthemes.com/',
 				infourl : 'http://wellthemes.com/',
 				version : "1.0"

@@ -3,7 +3,7 @@
 	Plugin Name: 	WellThemes Shortcodes
 	Version: 		1.0.1
 	Description: 	Adds shortcodes to easily to your theme.
-	Author: 		Sami Ch.
+	Author: 		WellThemes Team
 	Author URI: 	http://www.wellthemes.com
 	Plugin URI: 	http://www.wellthemes.com
 	Text Domain: 	wtshortcodes

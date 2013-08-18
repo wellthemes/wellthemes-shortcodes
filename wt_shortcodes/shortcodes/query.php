@@ -21,7 +21,7 @@
  */
 if (!function_exists('wellthemes_get_recent_posts_list')) {
 
-	function wellthemes_get_recent_posts_list( $atts, $content = null ) {
+	function wellthemes_get_recent_posts_list( $atts ) {
  	    extract(shortcode_atts(array(
 	   		'title' 	=> 	'Recent Posts',
 			'limit' 	=> 	"5",
@@ -39,15 +39,16 @@ if (!function_exists('wellthemes_get_recent_posts_list')) {
 		
 		$recent_posts = wp_get_recent_posts( $args );
 		
-		$heading = "<h2 class='wellthemes-recent-posts'>";
+		$heading = "<h4 class='wellthemes-recent-posts'>";
 		$heading .= $title;
-		$heading .= "</h2>"; 
+		$heading .= "</h4>"; 
 		
 		$list = "<ul>";
 		foreach( $recent_posts as $post ) 
 			$list .= "<li><a href='". get_permalink( $post["ID"] ) ."'>". $post["post_title"] ."</a></li>";
 		$list .= "</ul>";
 		
+
 		$output = $heading.$list;
 		
 		return $output;
