@@ -142,6 +142,13 @@
 					a.addImmediate( c, "Round Background", "[dropcap style='round']A[/dropcap]");
 					
 					a.addImmediate( b, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
+
+					c = b.addMenu({
+						title: "Query"
+					});
+
+					a.addImmediate( c, "Recent Posts List", "[recent_posts title='Recent Posts' limit='5' order='ASC' category='0']");
+					a.addImmediate( c, "Authors", "[print_authors display_posts=true exclude_admin=false show_fullname=true hide_empty=false]");
 					
 				});
                 
