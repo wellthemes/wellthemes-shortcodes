@@ -77,7 +77,7 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 
 		$class = 'wellthemes-msgbox msgbox-'.$style;
 
-		if( isset($custom_icon) ) {
+		if( $custom_icon !== '' ) {
 
 			// Remove styling from the box if there is custom icon.
 			$class .= ' has-icon';
@@ -85,8 +85,48 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 			// Add the $custom icon tag.
 			$custom_icon = "<i class='icon-". $custom_icon ."'></i>";
 
-			// Prepend the icon to the content.
-			$content = $custom_icon . $content;
+		} else {
+			// Else, we will put custom icons for the following types of
+			// message boxes. Its done this way, because the nice names
+			// of the msgboxes are diferent from the icon names.
+			switch( $style ) {
+
+				case 'doc': 
+					$custom_icon = "<i class='icon-file-alt'></i>"; 
+					break;
+
+				case 'error': 
+					$custom_icon = "<i class='icon-remove'></i>";
+					break;
+
+				case 'download': 
+					$custom_icon = "<i class='icon-download-alt'></i>";
+					break;
+
+				case 'help': 
+					$custom_icon = "<i class='icon-plus-sign-alt'></i>";
+					break;
+
+				case 'info': 
+					$custom_icon = "<i class='icon-info'></i>";
+					break;
+
+				case 'media': 
+					$custom_icon = "<i class='icon-picture'></i>";
+					break;
+
+				case 'new': 
+					$custom_icon = "<i class='icon-star'></i>";
+					break;
+
+				case 'success': 
+					$custom_icon = "<i class='icon-ok'></i>";
+					break;
+
+				case 'warning': 
+					$custom_icon = "<i class='icon-warning-sign'></i>";
+					break;
+			}
 		}
 
 
@@ -95,7 +135,7 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 			$cssstyle = 'style="width:'.$width.'"';
 		}
 
-		$box = '<div class="'.$class.'" '.$cssstyle.'>'.do_shortcode( $content ).'</div>';
+		$box = '<div class="'.$class.'" '.$cssstyle.'><p class="msgbox-content">' . $custom_icon . do_shortcode( $content ) . '</p></div>';
 		return $box;
 	}
 }
