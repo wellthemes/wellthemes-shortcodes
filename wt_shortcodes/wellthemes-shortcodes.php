@@ -31,9 +31,17 @@ require_once( dirname(__FILE__) . '/shortcode-functions.php');
  * Enqueue scripts and styles for the shortcodes plugin.
  */
 if( !function_exists ('wellthemes_shortcodes_scripts') ) :
+
 	function wellthemes_shortcodes_scripts() {
-		wp_enqueue_style('wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/font-awesome/css/font-awesome.css');		
-		wp_enqueue_style('wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/wellthemes_shortcodes_styles.css');		
+
+		// Add font-awesome stylesheets (minified version. Remove .min to use the regular one)
+		wp_enqueue_style('font_awesome_stylesheet', plugin_dir_url( __FILE__ ) . 'css/font-awesome/css/font-awesome.min.css');
+
+		// Main styles file		
+		wp_register_style('wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/shortcodes.css');	
+		wp_enqueue_style('wellthemes_shortcodes_css');
+
 	}
+
 	add_action('wp_enqueue_scripts', 'wellthemes_shortcodes_scripts');
 endif;

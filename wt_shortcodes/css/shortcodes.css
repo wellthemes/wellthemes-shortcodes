@@ -1,0 +1,44 @@
+/*
+ * Style columns.
+ * ------------------------------------------------------ 
+ * Only precentage were used, so that the sizes will fit 
+ * perfectly in any content width. 
+ * */
+.wellthemes-column-one-half {
+	width: 48.93617021276595%;
+
+	margin-right: 2.12%;
+	float: left;
+}
+
+.wellthemes-column-one-third {
+	width: 31.91%;
+
+	margin-right: 2.12%;
+	float: left;
+}
+
+.wellthemes-column-one-fourth {
+	width: 23.40%;;
+
+	margin-right: 2.12%;
+	float: left;
+}
+
+.wellthemes-column-one-fifth {
+	width: 18.30%;
+
+	margin-right: 2.12%;
+	float: left;
+}
+
+.wellthemes-column-one-sixth {
+	width: 14.89%;
+
+	margin-right: 2.12%;
+	float: left;
+}
+
+.wellthemes-column-last {
+	margin-right: 0;
+}
