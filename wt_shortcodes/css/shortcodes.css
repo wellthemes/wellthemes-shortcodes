@@ -42,3 +42,21 @@
 .wellthemes-column-last {
 	margin-right: 0;
 }
+
+/*
+ * Message boxes
+ * ------------------------------------------------------ 
+ * This is the default design of the boxes.
+ * */
+.wellthemes-msgbox {
+	color:#555;
+    border-radius: 3px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+    margin:10px;
+}
+
+.wellthemes-msgbox.msgbox-doc {
+	background: #e3f7fc ;
+	border: 1px solid #8ed9f6;
+}

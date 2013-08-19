@@ -7,3 +7,4 @@
 #### Update 19.08.2013
 * Added is the stylesheet for the shortcodes
 * Added fluid columns styles.
+* Added custom icons for the message boxes + minor style for it.

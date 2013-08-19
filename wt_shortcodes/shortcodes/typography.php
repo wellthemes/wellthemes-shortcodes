@@ -72,16 +72,30 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 		extract(shortcode_atts(array(
 			'style' => '',
 			'width' => '',
+			'custom_icon' => ''
 		), $atts));
 
-		$class = 'wellthemes-msgbox'.$style;
-				
+		$class = 'wellthemes-msgbox msgbox-'.$style;
+
+		if( isset($custom_icon) ) {
+
+			// Remove styling from the box if there is custom icon.
+			$class .= ' has-icon';
+
+			// Add the $custom icon tag.
+			$custom_icon = "<i class='icon-". $custom_icon ."'></i>";
+
+			// Prepend the icon to the content.
+			$content = $custom_icon . $content;
+		}
+
+
 		$cssstyle = '';
 		if ($width){ 
 			$cssstyle = 'style="width:'.$width.'"';
 		}
 
-		$box = '<div class="'.$class.'" '.$cssstyle.'>'.$content.'</div>';
+		$box = '<div class="'.$class.'" '.$cssstyle.'>'.do_shortcode( $content ).'</div>';
 		return $box;
 	}
 }
