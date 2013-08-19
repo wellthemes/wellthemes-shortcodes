@@ -119,6 +119,10 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 					$custom_icon = "<i class='icon-star'></i>";
 					break;
 
+				case 'note': 
+					$custom_icon = "<i class='icon-pencil'></i>";
+					break;
+
 				case 'success': 
 					$custom_icon = "<i class='icon-ok'></i>";
 					break;
