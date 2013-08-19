@@ -3,8 +3,8 @@
 class wellthemesShortcodes {
 
 	function __construct() {
-		add_action('init', array(&$this, 'action_admin_init'));        
-    	add_action('admin_enqueue_scripts', array(&$this, 'action_admin_scripts_init'));      
+	    add_action('init', array(&$this, 'action_admin_init'));        
+        add_action('admin_enqueue_scripts', array(&$this, 'action_admin_scripts_init'));      
 	}		
 	
 	/**

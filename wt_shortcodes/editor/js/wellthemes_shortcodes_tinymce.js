@@ -95,25 +95,13 @@
 					c = b.addMenu({
 						title: "Lists"
 					});
-					a.addImmediate( c, "Arrow List", "[list style='arrow']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Circle List", "[list style='circle']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Square List", "[list style='square']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Star List", "[list style='star']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Diamond List", "[list style='diamond']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Pencil List", "[list style='pencil']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Check List", "[list style='check']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Check Green List", "[list style='check-green']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");					
-					a.addImmediate( c, "Plus List", "[list style='plus']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Plus Green List", "[list style='plus-green']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Minus List", "[list style='minus']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");	
-					a.addImmediate( c, "Minus Red List", "[list style='minus-red']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");					
-					a.addImmediate( c, "Doc List", "[list style='doc']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Info List", "[list style='info']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					a.addImmediate( c, "Error list", "[list style='error']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");					
-					a.addImmediate( c, "Warning List", "[list style='warning']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					
-					a.addImmediate( c, "Delete List", "[list style='delete']<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
-					
+					a.addImmediate( c, "caret-right", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=caret-right]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=caret-right]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "star", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=star]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=star]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "ok", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=ok]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=ok]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "remove", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=remove]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=remove]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "play-circle", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=play-circle]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=play-circle]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "tag", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=tag]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=tag]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
+					a.addImmediate( c, "plus", "[list icon_color=normal]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=plus]&nbsp;Item 1...&nbsp;[/list_item]<br />&nbsp;&nbsp;&nbsp;&nbsp;[list_item icon=plus]&nbsp;Item 2...&nbsp;[/list_item]<br />[/list]<br /><br />");
 								
 					c = b.addMenu({
 						title: "Social"

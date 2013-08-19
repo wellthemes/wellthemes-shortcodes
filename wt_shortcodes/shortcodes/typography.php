@@ -119,7 +119,7 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
 					$custom_icon = "<i class='icon-star'></i>";
 					break;
 
-				case 'note': 
+				case 'success': 
 					$custom_icon = "<i class='icon-pencil'></i>";
 					break;
 
@@ -163,13 +163,13 @@ add_filter( 'the_content', 'run_list_shortcode', 7 );
 if (!function_exists('wellthemes_list_shortcode')) {
 	function wellthemes_list_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
-			'style' => '',
+			'icon_color' => '',
 		   ), $atts));
-	   
+
 		$class = 'wellthemes-list ';
-		$class .= 'wellthemes-list-';
-		$class .= $style; 
-		
+		$class .= 'color-';
+		$class .= $icon_color; 
+
 		$list = '<ul class="'.$class.'">'.$content.'</ul>';
 		return $list;
 	}	
@@ -193,7 +193,11 @@ add_filter( 'the_content', 'run_list_item_shortcode', 7 );
 
 if (!function_exists('wellthemes_list_item_shortcode')) {	
 	function wellthemes_list_item_shortcode( $atts, $content = null ) {	
-		return '<li>' . $content . '</li>';		
+		extract(shortcode_atts(array(
+			'icon' => ''
+		   ), $atts));
+
+		return "<li><i class='icon-$icon'></i>" . $content . '</li>';		
 	}
 }
 

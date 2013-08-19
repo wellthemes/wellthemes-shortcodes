@@ -83,13 +83,37 @@
 	margin-right: 8px;
 }
 
-.wellthemes-msgbox.msgbox-doc {	background: #e3f7fc; border: 1px solid #83d1f5; }
-.wellthemes-msgbox.msgbox-error { background: #fcb8b8; border: 1px solid #df7979 }
-.wellthemes-msgbox.msgbox-download { background: #acd7a4; border: 1px solid #8bc381 }
-.wellthemes-msgbox.msgbox-help { background: #96e4e9; border: 1px solid #71ccd2 }
-.wellthemes-msgbox.msgbox-info { background: #6dc8fc; border: 1px solid #56b8f1 }
-.wellthemes-msgbox.msgbox-media { background: #ffda93; border: 1px solid #ebc478 }
-.wellthemes-msgbox.msgbox-new { background: #faefa4; border: 1px solid #e8dc8c }
-.wellthemes-msgbox.msgbox-note { background: #8ce8e3; border: 1px solid #5acec7 }
-.wellthemes-msgbox.msgbox-success { background: #a2f0b1; border: 1px solid #80e493 }
-.wellthemes-msgbox.msgbox-warning { background: #e48080; border: 1px solid #d26969 }
+.wellthemes-msgbox.msgbox-doc {	background: #e3f7fc; }
+.wellthemes-msgbox.msgbox-error { background: #fcb8b8; }
+.wellthemes-msgbox.msgbox-download { background: #acd7a4; }
+.wellthemes-msgbox.msgbox-help { background: #96e4e9; }
+.wellthemes-msgbox.msgbox-info { background: #6dc8fc; }
+.wellthemes-msgbox.msgbox-media { background: #ffda93; }
+.wellthemes-msgbox.msgbox-new { background: #faefa4; }
+.wellthemes-msgbox.msgbox-note { background: #8ce8e3; }
+.wellthemes-msgbox.msgbox-success { background: #a2f0b1; }
+.wellthemes-msgbox.msgbox-warning { background: #e48080; }
+
+/**	
+ * List
+ * ------------------------------------------------------
+ * We will remove the list style for custom lists and add
+ * custom font-awesome icons, the ones that the user picks.
+ */
+.wellthemes-list li {
+	list-style: none;
+}
+
+.wellthemes-list li i {
+	margin-right: 8px;
+}
+
+.wellthemes-list.color-red li i { color: #f46565; }
+.wellthemes-list.color-green li i { color: #38d638; }
+.wellthemes-list.color-blue li i { color: #29a1fe; }
+.wellthemes-list.color-orange li i { color: #29a1fe; }
+.wellthemes-list.color-brown li i { color: #29a1fe; }
+.wellthemes-list.color-gray li i { color: #29a1fe; }
+.wellthemes-list.color-blue li i { color: #29a1fe; }
+.wellthemes-list.color-blue li i { color: #29a1fe; }
+.wellthemes-list.color-blue li i { color: #29a1fe; }
