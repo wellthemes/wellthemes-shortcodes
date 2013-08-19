@@ -1,4 +1,23 @@
 /*
+ * Standart styling
+ * ------------------------------------------------------ 
+ * Helper classes for styling the shortcodes + regular ones
+ * that can be used on normal content.
+ * */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/*
  * Style columns.
  * ------------------------------------------------------ 
  * Only precentage were used, so that the sizes will fit 
@@ -50,13 +69,27 @@
  * */
 .wellthemes-msgbox {
 	color:#555;
-    border-radius: 3px;
-    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
-    padding:10px 10px 10px 36px;
-    margin:10px;
+	padding: 10px 30px 10px 13px;
+	display: block;
+	margin: 20px 0;
+	border-radius: 3px;
 }
 
-.wellthemes-msgbox.msgbox-doc {
-	background: #e3f7fc ;
-	border: 1px solid #8ed9f6;
+.wellthemes-msgbox .msgbox-content:last-child {
+	margin-bottom: 0;
 }
+
+.wellthemes-msgbox i {
+	margin-right: 8px;
+}
+
+.wellthemes-msgbox.msgbox-doc {	background: #e3f7fc; border: 1px solid #83d1f5; }
+.wellthemes-msgbox.msgbox-error { background: #fcb8b8; border: 1px solid #df7979 }
+.wellthemes-msgbox.msgbox-download { background: #acd7a4; border: 1px solid #8bc381 }
+.wellthemes-msgbox.msgbox-help { background: #96e4e9; border: 1px solid #71ccd2 }
+.wellthemes-msgbox.msgbox-info { background: #6dc8fc; border: 1px solid #56b8f1 }
+.wellthemes-msgbox.msgbox-media { background: #ffda93; border: 1px solid #ebc478 }
+.wellthemes-msgbox.msgbox-new { background: #faefa4; border: 1px solid #e8dc8c }
+.wellthemes-msgbox.msgbox-note { background: #8ce8e3; border: 1px solid #5acec7 }
+.wellthemes-msgbox.msgbox-success { background: #a2f0b1; border: 1px solid #80e493 }
+.wellthemes-msgbox.msgbox-warning { background: #e48080; border: 1px solid #d26969 }
