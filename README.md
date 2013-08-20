@@ -1,7 +1,4 @@
 ## WellThemes Shortcodes
+![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )
 
-##### TODO List:
-* 	Add styling to the shortcodes. I think its good to make them more generous, so they can be edited for diferent themes easily, but still provide some good styling variants. (base style and the rest is for the classes.)
-*	Shortcodes to be added: `Tabs`, `Dividers`, `Toggles`, `Quotes (testimonials)`, `Query recent posts as carousel.`
-
-_Please, edit/delete suggestions that seems bad._
+  Wellthemes shortcodes plugin, gives all you need to style and present your articles in best possible way.
