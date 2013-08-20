@@ -1,0 +1,23 @@
+/**
+ * Edior styles for the shortcodes picker.
+ * ----------------------------------------------
+ */
+
+/* Root (button class) */
+.mce_wellthemes_button {
+
+}
+
+#menu_content_content_wellthemes_button_menu_tbl,
+.mceSplitButtonMenu .mceMenu table {
+	background: white;
+	border-bottom: 3px solid #EB643B;
+	padding: 5px;
+}
+
+
+#menu_content_content_wellthemes_button_menu_tbl table .mceMenuActive ,
+.mceSplitButtonMenu .mceMenu table .mceMenuActive {
+	background: #EB643B;
+	color: white;
+}

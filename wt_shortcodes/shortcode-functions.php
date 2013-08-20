@@ -12,6 +12,8 @@
  *  
  */
 
+// Help functions
+require_once( dirname(__FILE__) . '/lib/helpers.php');
 
 // Load Social shortcodes. (facebook, twitter, etc.)
 require_once( dirname(__FILE__) . '/shortcodes/social.php');
@@ -24,3 +26,6 @@ require_once( dirname(__FILE__) . '/shortcodes/typography.php');
 
 // Load Queries shortcodes. (recent posts, list authors, etc.)
 require_once( dirname(__FILE__) . '/shortcodes/query.php');
+
+// Load Elements shortcodes. (search form, sliders, etc.)
+require_once( dirname(__FILE__) . '/shortcodes/elements.php');

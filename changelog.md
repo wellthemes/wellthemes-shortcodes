@@ -2,7 +2,9 @@
 ![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )
 
 #### v1.0 BETA - Updates: 20.08.2013
-* Stylesheet for the buttons. (i think they can go better...)
+* Added file for custom functionality (helper file) where help functions will be placed. First one is wt_isHEX() and wt_toHEX();
+* Added Custom colors for highlight shortcodes.
+* Added Stylesheet for the buttons. (i think they can go better...)
 * Change prefix from wellthemes_ to wt_
 
 #### v1.0 BETA - Updates: 19.08.2013

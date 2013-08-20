@@ -45,3 +45,19 @@ if( !function_exists ('wellthemes_shortcodes_scripts') ) :
 
 	add_action('wp_enqueue_scripts', 'wellthemes_shortcodes_scripts');
 endif;
+
+
+/**
+ * Style for the editor of the shortcodes
+ */
+if( !function_exists ('wt_mce_style') ) :
+
+	function wt_mce_style() {
+
+		wp_register_style('wt_editor', plugin_dir_url( __FILE__ ) . 'css/editor.css');	
+		wp_enqueue_style('wt_editor');
+
+	}
+
+	add_filter( 'admin_head', 'wt_mce_style'  );
+endif;

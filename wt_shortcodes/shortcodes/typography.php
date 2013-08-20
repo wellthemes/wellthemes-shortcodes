@@ -15,6 +15,7 @@
  */
 
 
+
 /**
  * COLUMN SHORTCODE
  * ----------------------------------------------------------------
@@ -279,14 +280,24 @@ if (!function_exists('wt_highlight_shortcode')) {
 
 	function wt_highlight_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
-			'style' => '',
+			'color' => '',
 		   ), $atts));
-	   
-		$class = 'wt-highlight ';
-		$class .= 'wt-highlight-';
-		$class .= $style; 
 
-		$highlight = '<span class="'.$class.'">'.$content.'</span>';
+		$class = 'wt-highlight';
+		$style = '';
+
+		if( ! wt_isHEX( $color ) && $color != '' ) {
+			$class .= ' wt-highlight-';
+			$class .= $color;
+		} else {
+			// If the user didnt give color, the default is #FFA
+			// If he did, it will be validated.
+			wt_toHEX( $color, '#ffa' );
+			$style = "style='background-color: $color'";
+		}
+
+
+		$highlight = "<span $style class='$class'>$content</span>";
 		return $highlight;
 	}
 }

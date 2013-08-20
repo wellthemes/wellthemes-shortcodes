@@ -58,26 +58,7 @@
 					c = b.addMenu({
 						title: "Highlight"
 					});
-					a.addImmediate( c, "Default", "[highlight style='default'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Alice Blue", "[highlight style='alice-blue'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Beige", "[highlight style='beige'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Buff", "[highlight style='buff'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Bubbles", "[highlight style='bubbles'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Cream", "[highlight style='cream'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Cyan", "[highlight style='cyan'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Magenta", "[highlight style='magenta'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Misty Rose", "[highlight style='misty-rose'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Pearl", "[highlight style='pearl'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Peach", "[highlight style='peach'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Pear Green", "[highlight style='pear-green'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Pink", "[highlight style='pink'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Platinum", "[highlight style='platinum'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Salmon", "[highlight style='salmon'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Seashell", "[highlight style='seashell'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Smoke", "[highlight style='smoke'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Yellow", "[highlight style='yellow'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Vanilla", "[highlight style='vanilla'] Content goes here... [/highlight]");
-					a.addImmediate( c, "Wheat", "[highlight style='wheat'] Content goes here... [/highlight]");
+					a.addImmediate( c, "Default", "[highlight color=''] Content goes here... [/highlight]");
 					
 					c = b.addMenu({
 						title: "Lists"
@@ -125,6 +106,11 @@
 					a.addImmediate( c, "Recent Posts List", "[recent_posts title='Recent Posts' limit='5' order='ASC' category='0']");
 					a.addImmediate( c, "Authors", "[print_authors display_posts=true exclude_admin=false show_fullname=true hide_empty=false]");
 					
+					c = b.addMenu({
+						title: "Elements"
+					});
+
+					a.addImmediate( c, "Search Form", "[search button_text='Search']");
 				});
                 
                 return btn;
