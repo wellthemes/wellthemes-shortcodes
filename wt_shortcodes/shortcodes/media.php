@@ -14,8 +14,8 @@
  * LIGHTBOX IMAGE
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_lightbox_image_shortcode')) {
-	function wellthemes_lightbox_image_shortcode( $atts ) {
+if (!function_exists('wt_lightbox_image_shortcode')) {
+	function wt_lightbox_image_shortcode( $atts ) {
 		extract( shortcode_atts( array(
 			'src' => '',
 			'bigimage' => '',
@@ -35,7 +35,7 @@ if (!function_exists('wellthemes_lightbox_image_shortcode')) {
 		return $lightbox_image;
 	}
 	
-	add_shortcode( 'lightbox_image', 'wellthemes_lightbox_image_shortcode' );
+	add_shortcode( 'lightbox_image', 'wt_lightbox_image_shortcode' );
 }
 
 
@@ -43,9 +43,9 @@ if (!function_exists('wellthemes_lightbox_image_shortcode')) {
  * VIDEO SHORTCODE
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_video_shortcode')) {
+if (!function_exists('wt_video_shortcode')) {
 	
-	function wellthemes_video_shortcode( $atts, $content = null ) {
+	function wt_video_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'type' => 'youtube',
 			'height' => '420',
@@ -67,5 +67,5 @@ if (!function_exists('wellthemes_video_shortcode')) {
 			return '<iframe class="wellthemes-video '.esc_attr($align).'" src="http://player.vimeo.com/video/'.$id.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 		}
 	}
-	add_shortcode('video', 'wellthemes_video_shortcode');
+	add_shortcode('video', 'wt_video_shortcode');
 }

@@ -17,9 +17,9 @@
  * TWITTER
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_twitter_shortcode')) {
+if (!function_exists('wt_twitter_shortcode')) {
 
-	function wellthemes_twitter_shortcode( $atts, $content = null ) {
+	function wt_twitter_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 				'layout'        => 'vertical',
@@ -42,7 +42,7 @@ if (!function_exists('wellthemes_twitter_shortcode')) {
 	
 	}
 	
-add_shortcode('twitter', 'wellthemes_twitter_shortcode');
+add_shortcode('twitter', 'wt_twitter_shortcode');
 
 }
 
@@ -50,9 +50,9 @@ add_shortcode('twitter', 'wellthemes_twitter_shortcode');
  * FACEBOOK
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_facebook_shortcode')) {
+if (!function_exists('wt_facebook_shortcode')) {
 
-	function wellthemes_facebook_shortcode( $atts, $content = null ) {
+	function wt_facebook_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 				'layout'		=> 'box_count',
@@ -77,7 +77,7 @@ if (!function_exists('wellthemes_facebook_shortcode')) {
 	
 	}
 	
-add_shortcode('facebook', 'wellthemes_facebook_shortcode');
+add_shortcode('facebook', 'wt_facebook_shortcode');
 
 }
 
@@ -85,9 +85,9 @@ add_shortcode('facebook', 'wellthemes_facebook_shortcode');
  * GOOGLE PLUS
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_gplus_shortcode')) {
+if (!function_exists('wt_gplus_shortcode')) {
 
-	function wellthemes_gplus_shortcode( $atts, $content = null ) {
+	function wt_gplus_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 				'size'			=> 'tall',
@@ -104,7 +104,7 @@ if (!function_exists('wellthemes_gplus_shortcode')) {
 	
 	}
 	
-add_shortcode('gplus', 'wellthemes_gplus_shortcode');
+add_shortcode('gplus', 'wt_gplus_shortcode');
 
 }
 
@@ -113,9 +113,9 @@ add_shortcode('gplus', 'wellthemes_gplus_shortcode');
  * DIGG - DIGG COMPACT
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_digg_shortcode')) {
+if (!function_exists('wt_digg_shortcode')) {
 
-	function wellthemes_digg_shortcode( $atts, $content = null ) {
+	function wt_digg_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 			'layout'        => 'DiggMedium',
@@ -138,7 +138,7 @@ if (!function_exists('wellthemes_digg_shortcode')) {
 	
 	}
 	
-add_shortcode('digg', 'wellthemes_digg_shortcode');
+add_shortcode('digg', 'wt_digg_shortcode');
 
 }
 
@@ -148,9 +148,9 @@ add_shortcode('digg', 'wellthemes_digg_shortcode');
  *
  * Layout options: From 1 to 5.
  */
-if (!function_exists('wellthemes_stumbleupon_shortcode')) {
+if (!function_exists('wt_stumbleupon_shortcode')) {
 
-	function wellthemes_stumbleupon_shortcode( $atts, $content = null ) {
+	function wt_stumbleupon_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 			'layout'        => '5',
@@ -163,7 +163,7 @@ if (!function_exists('wellthemes_stumbleupon_shortcode')) {
 		return $out;
 	}
 	
-add_shortcode('stumbleupon', 'wellthemes_stumbleupon_shortcode');
+add_shortcode('stumbleupon', 'wt_stumbleupon_shortcode');
 
 }
 
@@ -173,9 +173,9 @@ add_shortcode('stumbleupon', 'wellthemes_stumbleupon_shortcode');
  *
  * Layout options: From 1 to 3.
  */
-if (!function_exists('wellthemes_linkedin_shortcode')) {
+if (!function_exists('wt_linkedin_shortcode')) {
 
-	function wellthemes_linkedin_shortcode( $atts, $content = null ) {
+	function wt_linkedin_shortcode( $atts, $content = null ) {
 	
 		extract(shortcode_atts(array(
 			'layout'        => '3',
@@ -191,6 +191,6 @@ if (!function_exists('wellthemes_linkedin_shortcode')) {
 		return $out;
 	}	
 	
-add_shortcode('linkedin', 'wellthemes_linkedin_shortcode');
+add_shortcode('linkedin', 'wt_linkedin_shortcode');
 
 }

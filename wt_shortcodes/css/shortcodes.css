@@ -23,42 +23,42 @@
  * Only precentage were used, so that the sizes will fit 
  * perfectly in any content width. 
  * */
-.wellthemes-column-one-half {
+.wt-column-one-half {
 	width: 48.93617021276595%;
 
 	margin-right: 2.12%;
 	float: left;
 }
 
-.wellthemes-column-one-third {
+.wt-column-one-third {
 	width: 31.91%;
 
 	margin-right: 2.12%;
 	float: left;
 }
 
-.wellthemes-column-one-fourth {
+.wt-column-one-fourth {
 	width: 23.40%;;
 
 	margin-right: 2.12%;
 	float: left;
 }
 
-.wellthemes-column-one-fifth {
+.wt-column-one-fifth {
 	width: 18.30%;
 
 	margin-right: 2.12%;
 	float: left;
 }
 
-.wellthemes-column-one-sixth {
+.wt-column-one-sixth {
 	width: 14.89%;
 
 	margin-right: 2.12%;
 	float: left;
 }
 
-.wellthemes-column-last {
+.wt-column-last {
 	margin-right: 0;
 }
 
@@ -67,7 +67,7 @@
  * ------------------------------------------------------ 
  * This is the default design of the boxes.
  * */
-.wellthemes-msgbox {
+.wt-msgbox {
 	color:#555;
 	padding: 10px 30px 10px 13px;
 	display: block;
@@ -75,24 +75,24 @@
 	border-radius: 3px;
 }
 
-.wellthemes-msgbox .msgbox-content:last-child {
+.wt-msgbox .msgbox-content:last-child {
 	margin-bottom: 0;
 }
 
-.wellthemes-msgbox i {
+.wt-msgbox i {
 	margin-right: 8px;
 }
 
-.wellthemes-msgbox.msgbox-doc {	background: #e3f7fc; }
-.wellthemes-msgbox.msgbox-error { background: #fcb8b8; }
-.wellthemes-msgbox.msgbox-download { background: #acd7a4; }
-.wellthemes-msgbox.msgbox-help { background: #96e4e9; }
-.wellthemes-msgbox.msgbox-info { background: #6dc8fc; }
-.wellthemes-msgbox.msgbox-media { background: #ffda93; }
-.wellthemes-msgbox.msgbox-new { background: #faefa4; }
-.wellthemes-msgbox.msgbox-note { background: #8ce8e3; }
-.wellthemes-msgbox.msgbox-success { background: #a2f0b1; }
-.wellthemes-msgbox.msgbox-warning { background: #e48080; }
+.wt-msgbox.msgbox-doc {	background: #e3f7fc; }
+.wt-msgbox.msgbox-error { background: #fcb8b8; }
+.wt-msgbox.msgbox-download { background: #acd7a4; }
+.wt-msgbox.msgbox-help { background: #96e4e9; }
+.wt-msgbox.msgbox-info { background: #6dc8fc; }
+.wt-msgbox.msgbox-media { background: #ffda93; }
+.wt-msgbox.msgbox-new { background: #faefa4; }
+.wt-msgbox.msgbox-note { background: #8ce8e3; }
+.wt-msgbox.msgbox-success { background: #a2f0b1; }
+.wt-msgbox.msgbox-warning { background: #e48080; }
 
 /**	
  * List
@@ -100,30 +100,30 @@
  * We will remove the list style for custom lists and add
  * custom font-awesome icons, the ones that the user picks.
  */
-.wellthemes-list li {
+.wt-list li {
 	list-style: none;
 }
 
-.wellthemes-list li i {
+.wt-list li i {
 	margin-right: 8px;
 }
 
-.wellthemes-list.color-red li i { color: #f46565; }
-.wellthemes-list.color-green li i { color: #38d638; }
-.wellthemes-list.color-blue li i { color: #29a1fe; }
-.wellthemes-list.color-orange li i { color: #29a1fe; }
-.wellthemes-list.color-brown li i { color: #29a1fe; }
-.wellthemes-list.color-gray li i { color: #29a1fe; }
-.wellthemes-list.color-blue li i { color: #29a1fe; }
-.wellthemes-list.color-blue li i { color: #29a1fe; }
-.wellthemes-list.color-blue li i { color: #29a1fe; }
+.wt-list.color-red li i { color: #f46565; }
+.wt-list.color-green li i { color: #38d638; }
+.wt-list.color-blue li i { color: #29a1fe; }
+.wt-list.color-orange li i { color: #29a1fe; }
+.wt-list.color-brown li i { color: #29a1fe; }
+.wt-list.color-gray li i { color: #29a1fe; }
+.wt-list.color-blue li i { color: #29a1fe; }
+.wt-list.color-blue li i { color: #29a1fe; }
+.wt-list.color-blue li i { color: #29a1fe; }
 
 /**	
  * Buttons
  * ------------------------------------------------------
  */
 
-.wellthemes-button {
+.wt-button {
 	text-decoration: none;
 	padding: 7px 15px;
 	color: white;
@@ -145,27 +145,27 @@
 	
 }
 
-.wellthemes-button:hover {
+.wt-button:hover {
 	opacity: 0.8;
 }
 
-.wellthemes-button.button-white:visited { color: #999; }
+.wt-button.button-white:visited { color: #999; }
 
-.wellthemes-button.size-small { padding: 3px 10px; font-size: 12px;}
-.wellthemes-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
+.wt-button.size-small { padding: 3px 10px; font-size: 12px;}
+.wt-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
 
-.wellthemes-button.button-white 	{ color: #999999; background: #FFFFFF; border: 1px solid #E5E5E5; }
-.wellthemes-button.button-red 		{ background: #fe7272;  }
-.wellthemes-button.button-blue 		{ background: #00a2ff;  }
-.wellthemes-button.button-orange	{ background: #ff7f1a;  }
-.wellthemes-button.button-black 	{ background: #393939;  }
-.wellthemes-button.button-green 	{ background: #36e146;  }
-.wellthemes-button.button-magenta	{ background: #eb3899;  }
+.wt-button.button-white 	{ color: #999999; background: #FFFFFF; border: 1px solid #E5E5E5; }
+.wt-button.button-red 		{ background: #fe7272;  }
+.wt-button.button-blue 		{ background: #00a2ff;  }
+.wt-button.button-orange	{ background: #ff7f1a;  }
+.wt-button.button-black 	{ background: #393939;  }
+.wt-button.button-green 	{ background: #36e146;  }
+.wt-button.button-magenta	{ background: #eb3899;  }
 
 
-.wellthemes-button.button-red:visited,		
-.wellthemes-button.button-blue:visited, 		
-.wellthemes-button.button-orange:visited,	
-.wellthemes-button.button-black:visited, 	
-.wellthemes-button.button-green:visited, 	
-.wellthemes-button.button-magenta:visited { color: white; }	
+.wt-button.button-red:visited,		
+.wt-button.button-blue:visited, 		
+.wt-button.button-orange:visited,	
+.wt-button.button-black:visited, 	
+.wt-button.button-green:visited, 	
+.wt-button.button-magenta:visited { color: white; }	

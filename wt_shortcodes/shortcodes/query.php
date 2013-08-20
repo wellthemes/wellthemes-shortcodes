@@ -19,9 +19,9 @@
  * @param array $atts Shortcode attributes
  * @return string Output html as list
  */
-if (!function_exists('wellthemes_get_recent_posts_list')) {
+if (!function_exists('wt_get_recent_posts_list')) {
 
-	function wellthemes_get_recent_posts_list( $atts ) {
+	function wt_get_recent_posts_list( $atts ) {
  	    extract(shortcode_atts(array(
 	   		'title' 	=> 	'Recent Posts',
 			'limit' 	=> 	"5",
@@ -54,7 +54,7 @@ if (!function_exists('wellthemes_get_recent_posts_list')) {
 		return $output;
 	}
 	
-	add_shortcode('recent_posts', 'wellthemes_get_recent_posts_list');
+	add_shortcode('recent_posts', 'wt_get_recent_posts_list');
 
 }
 

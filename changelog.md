@@ -3,6 +3,7 @@
 
 #### v1.0 BETA - Updates: 20.08.2013
 * Stylesheet for the buttons. (i think they can go better...)
+* Change prefix from wellthemes_ to wt_
 
 #### v1.0 BETA - Updates: 19.08.2013
 

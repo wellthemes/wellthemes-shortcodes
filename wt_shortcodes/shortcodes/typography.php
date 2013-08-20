@@ -19,22 +19,22 @@
  * COLUMN SHORTCODE
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_column_shortcode')) {
+if (!function_exists('wt_column_shortcode')) {
 
-	function wellthemes_column_shortcode( $atts, $content = null ) {
+	function wt_column_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'size' => '',
 			'last' => 'no',
 		), $atts));
 
-		$class1 = 'wellthemes-column';		
+		$class1 = 'wt-column';		
 		if ($size != ''){
-			$class1  = 'wellthemes-column-'.$size;
+			$class1  = 'wt-column-'.$size;
 		}
 		
 		$class2 = '';
 		if ($last == 'yes'){
-			$class2  = ' wellthemes-column-last';
+			$class2  = ' wt-column-last';
 		}
 		
 		$class = $class1.$class2;
@@ -45,7 +45,7 @@ if (!function_exists('wellthemes_column_shortcode')) {
 		return $column;
 	}
 	
-	add_shortcode('column', 'wellthemes_column_shortcode');
+	add_shortcode('column', 'wt_column_shortcode');
 
 }
 
@@ -53,29 +53,29 @@ if (!function_exists('wellthemes_column_shortcode')) {
  * MESSAGE BOX
  * ----------------------------------------------------------------
  */
-add_shortcode( 'box', 'wellthemes_msgbox_shortcode' );
+add_shortcode( 'box', 'wt_msgbox_shortcode' );
 
 function run_box_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
 	remove_all_shortcodes(); 
-	add_shortcode( 'box', 'wellthemes_msgbox_shortcode' );	
+	add_shortcode( 'box', 'wt_msgbox_shortcode' );	
 	$content = do_shortcode( $content );
 	$shortcode_tags = $orig_shortcode_tags; 
 	return $content;
 } 
 add_filter( 'the_content', 'run_box_shortcode', 7 );
 
-if (!function_exists('wellthemes_msgbox_shortcode')) {
+if (!function_exists('wt_msgbox_shortcode')) {
 
-	function wellthemes_msgbox_shortcode( $atts, $content = null ) {
+	function wt_msgbox_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'style' => '',
 			'width' => '',
 			'custom_icon' => ''
 		), $atts));
 
-		$class = 'wellthemes-msgbox msgbox-'.$style;
+		$class = 'wt-msgbox msgbox-'.$style;
 
 		if( $custom_icon !== '' ) {
 
@@ -148,25 +148,25 @@ if (!function_exists('wellthemes_msgbox_shortcode')) {
  * LISTS
  * ----------------------------------------------------------------
  */
-add_shortcode( 'list', 'wellthemes_list_shortcode' );
+add_shortcode( 'list', 'wt_list_shortcode' );
 function run_list_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
 	remove_all_shortcodes(); 
-	add_shortcode( 'list', 'wellthemes_list_shortcode' );	
+	add_shortcode( 'list', 'wt_list_shortcode' );	
 	$content = do_shortcode( $content );
 	$shortcode_tags = $orig_shortcode_tags; 
 	return $content;
 } 
 add_filter( 'the_content', 'run_list_shortcode', 7 );
 
-if (!function_exists('wellthemes_list_shortcode')) {
-	function wellthemes_list_shortcode( $atts, $content = null ) {
+if (!function_exists('wt_list_shortcode')) {
+	function wt_list_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'icon_color' => '',
 		   ), $atts));
 
-		$class = 'wellthemes-list ';
+		$class = 'wt-list ';
 		$class .= 'color-';
 		$class .= $icon_color; 
 
@@ -179,20 +179,20 @@ if (!function_exists('wellthemes_list_shortcode')) {
  * SINGLE LIST ITEM
  * ----------------------------------------------------------------
  */
-add_shortcode( 'list_item', 'wellthemes_list_item_shortcode' );
+add_shortcode( 'list_item', 'wt_list_item_shortcode' );
 function run_list_item_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
 	remove_all_shortcodes(); 
-	add_shortcode( 'list_item', 'wellthemes_list_item_shortcode' );	
+	add_shortcode( 'list_item', 'wt_list_item_shortcode' );	
 	$content = do_shortcode( $content );
 	$shortcode_tags = $orig_shortcode_tags; 
 	return $content;
 } 
 add_filter( 'the_content', 'run_list_item_shortcode', 7 );
 
-if (!function_exists('wellthemes_list_item_shortcode')) {	
-	function wellthemes_list_item_shortcode( $atts, $content = null ) {	
+if (!function_exists('wt_list_item_shortcode')) {	
+	function wt_list_item_shortcode( $atts, $content = null ) {	
 		extract(shortcode_atts(array(
 			'icon' => ''
 		   ), $atts));
@@ -205,21 +205,21 @@ if (!function_exists('wellthemes_list_item_shortcode')) {
  * BUTTONS
  * ----------------------------------------------------------------
  */
-add_shortcode( 'button', 'wellthemes_button_shortcode' );
+add_shortcode( 'button', 'wt_button_shortcode' );
 function run_button_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
 	remove_all_shortcodes(); 
-	add_shortcode( 'button', 'wellthemes_button_shortcode' );	
+	add_shortcode( 'button', 'wt_button_shortcode' );	
 	$content = do_shortcode( $content );
 	$shortcode_tags = $orig_shortcode_tags; 
 	return $content;
 } 
 add_filter( 'the_content', 'run_button_shortcode', 7 );
 
-if (!function_exists('wellthemes_button_shortcode')) {
+if (!function_exists('wt_button_shortcode')) {
 
-	function wellthemes_button_shortcode( $atts, $content = null ) {
+	function wt_button_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'id' 		=> '',
 			'title'		=> '',			
@@ -234,7 +234,7 @@ if (!function_exists('wellthemes_button_shortcode')) {
 		$title = ($title) ? ' title="'.$title .'"' : '';
 		$id = ($id) ? ' id="'.$id .'"' : '';
 		
-		$class = 'wellthemes-button ';
+		$class = 'wt-button ';
 		$class .= 'button-';
 		$class .= $color; 
 		
@@ -263,27 +263,27 @@ if (!function_exists('wellthemes_button_shortcode')) {
  * HIGHLIGHT
  * ----------------------------------------------------------------
  */
-add_shortcode( 'highlight', 'wellthemes_highlight_shortcode' );
+add_shortcode( 'highlight', 'wt_highlight_shortcode' );
 function run_highlight_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
 	remove_all_shortcodes(); 
-	add_shortcode( 'highlight', 'wellthemes_highlight_shortcode' );	
+	add_shortcode( 'highlight', 'wt_highlight_shortcode' );	
 	$content = do_shortcode( $content );
 	$shortcode_tags = $orig_shortcode_tags; 
 	return $content;
 } 
 add_filter( 'the_content', 'run_highlight_shortcode', 7 );
 
-if (!function_exists('wellthemes_highlight_shortcode')) {
+if (!function_exists('wt_highlight_shortcode')) {
 
-	function wellthemes_highlight_shortcode( $atts, $content = null ) {
+	function wt_highlight_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'style' => '',
 		   ), $atts));
 	   
-		$class = 'wellthemes-highlight ';
-		$class .= 'wellthemes-highlight-';
+		$class = 'wt-highlight ';
+		$class .= 'wt-highlight-';
 		$class .= $style; 
 
 		$highlight = '<span class="'.$class.'">'.$content.'</span>';
@@ -295,14 +295,14 @@ if (!function_exists('wellthemes_highlight_shortcode')) {
  * DROPCAPS
  * ----------------------------------------------------------------
  */
-if (!function_exists('wellthemes_dropcap_shortcode')) {
+if (!function_exists('wt_dropcap_shortcode')) {
 
-	function wellthemes_dropcap_shortcode( $atts, $content = null ) {
+	function wt_dropcap_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'style' => 'default',
 		   ), $atts));
 	   
-		$class  = 'wellthemes-dropcap-';
+		$class  = 'wt-dropcap-';
 		$class .= $style; 
 		
 		$content = do_shortcode($content);
@@ -311,6 +311,6 @@ if (!function_exists('wellthemes_dropcap_shortcode')) {
 		return $dropcap;
 	}
 	
-	add_shortcode('dropcap', 'wellthemes_dropcap_shortcode');
+	add_shortcode('dropcap', 'wt_dropcap_shortcode');
 
 }
