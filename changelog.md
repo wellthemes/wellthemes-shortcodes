@@ -1,8 +1,8 @@
 ## Change.log for WellThemes Shortcodes Plugin
+[![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )]
 
-### v1.0 Beta [![PyPI](https://version-image.appspot.com/pypi/?name=Django)](https://pypi.python.org/pypi/Django/)
+#### v1.0 BETA - 19.08.2013
 
-#### Update 19.08.2013
 * Added styles for the list shortcode + the main code of it is updated.
 * Added are 5 example list items. The user can pick the color for the icons from the <ul> class. (also in the shortcode)
 * Added Complete styles and icons for msg boxes. (added functionality for custom icon and the type of color.) Now the user can pick the color like "doc" or "warning" and put the icon he wants.
