@@ -15,7 +15,7 @@
  * Add the shortcodes editor UI.
  */
 if( !class_exists( 'wellthemesShortcodes' ) ){
-	require_once( dirname(__FILE__) . '/editor/wellthemes_shortcodes_editor.php');
+	require_once( dirname(__FILE__) . '/admin/wellthemes_shortcodes_editor.php');
 }
 
 /**
@@ -35,15 +35,19 @@ if( !function_exists ('wellthemes_shortcodes_scripts') ) :
 	function wellthemes_shortcodes_scripts() {
 
 		// Add font-awesome stylesheets (minified version. Remove .min to use the regular one)
-		wp_enqueue_style('font_awesome_stylesheet', plugin_dir_url( __FILE__ ) . 'css/font-awesome/css/font-awesome.min.css');
+		wp_enqueue_style( 'font_awesome_stylesheet', plugin_dir_url( __FILE__ ) . 'css/font-awesome/css/font-awesome.min.css' );
 
 		// Main styles file		
-		wp_register_style('wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/shortcodes.css');	
-		wp_enqueue_style('wellthemes_shortcodes_css');
+		wp_register_style( 'wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/shortcodes.css' );	
+		wp_enqueue_style( 'wellthemes_shortcodes_css' );
+
+		// Load jQuery, build in to the wp core
+		wp_enqueue_script( 'jquery' );
 
 	}
 
 	add_action('wp_enqueue_scripts', 'wellthemes_shortcodes_scripts');
+
 endif;
 
 
@@ -60,4 +64,5 @@ if( !function_exists ('wt_mce_style') ) :
 	}
 
 	add_filter( 'admin_head', 'wt_mce_style'  );
+	
 endif;
