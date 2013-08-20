@@ -47,6 +47,13 @@ if( ! function_exists('wt_isHEX') ) {
 			return TRUE;
 		} 
 
+		// Check for no hastag too.
+		if( preg_match('/^[a-f0-9]{6}$/i', $str) OR preg_match('/^[a-f0-9]{3}$/i', $str) ) {
+
+			// It is, so we return true.
+			return TRUE;
+		} 
+
 		return FALSE;
 
 	}

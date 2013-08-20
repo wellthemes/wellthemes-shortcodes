@@ -115,8 +115,6 @@
 .wt-list.color-brown li i { color: #29a1fe; }
 .wt-list.color-gray li i { color: #29a1fe; }
 .wt-list.color-blue li i { color: #29a1fe; }
-.wt-list.color-blue li i { color: #29a1fe; }
-.wt-list.color-blue li i { color: #29a1fe; }
 
 /**	
  * Buttons
@@ -169,3 +167,24 @@
 .wt-button.button-black:visited, 	
 .wt-button.button-green:visited, 	
 .wt-button.button-magenta:visited { color: white; }	
+
+
+/**	
+ * Highlights
+ * ------------------------------------------------------
+ */
+.wt-highlight.wt-highlight-Blue { background: #a3dffe; }
+.wt-highlight.wt-highlight-Red { background: #fa8a8a; }
+.wt-highlight.wt-highlight-Green { background: #74ee88; }
+.wt-highlight.wt-highlight-Orange { background: #ffb38a; }
+
+/**	
+ * Other Styles for the Shortcode Plugin
+ * ------------------------------------------------------
+ */
+
+.spoiler,
+.spoiler a { color: transparent; text-shadow: 0 0 8px rgba(0,0,0,0.5); }
+
+.spoiler:hover,
+.spoiler:hover a { color: #444; background: transparent; text-shadow: none;}

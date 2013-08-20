@@ -12,6 +12,7 @@
  * - Buttons
  * - Highlight
  * - Dropcaps
+ * - Spoiler
  */
 
 
@@ -323,5 +324,19 @@ if (!function_exists('wt_dropcap_shortcode')) {
 	}
 	
 	add_shortcode('dropcap', 'wt_dropcap_shortcode');
+
+}
+
+/**
+ * SPOILERS
+ * ----------------------------------------------------------------
+ */
+if (!function_exists('wt_spoiler')) {
+
+	function wt_spoiler( $atts, $content = null ) {
+		return "<span class='spoiler'>" . do_shortcode($content) . "</span>";
+	}
+	
+	add_shortcode('spoiler', 'wt_spoiler');
 
 }

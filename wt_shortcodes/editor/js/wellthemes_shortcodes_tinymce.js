@@ -56,9 +56,11 @@
 					a.addImmediate( c, "Magenta", "[button url='#' icon='ok' color='magenta' size='medium' target='_blank'id=''] Button text... [/button]");
 					
 					c = b.addMenu({
-						title: "Highlight"
+						title: "Typography"
 					});
-					a.addImmediate( c, "Default", "[highlight color=''] Content goes here... [/highlight]");
+					a.addImmediate( c, "Highlight", "[highlight color='yellow'] Content goes here... [/highlight]");
+					a.addImmediate( c, "Spoiler", "[spoiler] Content goes here... [/spoiler]");
+					a.addImmediate( c, "Dropcap", "[dropcap style='square']A[/dropcap]");
 					
 					c = b.addMenu({
 						title: "Lists"
@@ -88,15 +90,6 @@
 					a.addImmediate( c, "Youtube", "[video type='youtube' id='Bag1gUxuU0g' width='500' height='300'  /]");
 					a.addImmediate( c, "Vimeo", "[video type='vimeo' id='33716408' width='500' height='300' /]");
 															
-					c = b.addMenu({
-						title: "Dropcaps"
-					});
-					
-					a.addImmediate( c, "Default", "[dropcap style='default']A[/dropcap]");
-					a.addImmediate( c, "Circle Background", "[dropcap style='circle']A[/dropcap]");
-					a.addImmediate( c, "Square Background", "[dropcap style='square']A[/dropcap]");
-					a.addImmediate( c, "Round Background", "[dropcap style='round']A[/dropcap]");
-					
 					a.addImmediate( b, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
 
 					c = b.addMenu({
