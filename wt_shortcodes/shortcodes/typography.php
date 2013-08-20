@@ -225,24 +225,26 @@ if (!function_exists('wellthemes_button_shortcode')) {
 			'title'		=> '',			
 			'url'		=> '#',
 			'target'	=> '',
-			'style'		=> '',
 			'size'      => '',
-			
+			'icon'		=> '',
+			'color' 	=> 'normal'			
 		), $atts));
 		
 		// variable setup
 		$title = ($title) ? ' title="'.$title .'"' : '';
 		$id = ($id) ? ' id="'.$id .'"' : '';
 		
-		if ($style){ $style = $style; } else { $style = 'default'; }
-		if ($size){ $size = $size; } else { $size = 'medium'; }
-		
 		$class = 'wellthemes-button ';
-		$class .= 'wellthemes-button-';
-		$class .= $style; 
+		$class .= 'button-';
+		$class .= $color; 
 		
-		$class .= ' wellthemes-button-';
+		$class .= ' size-';
 		$class .= $size;
+
+		$url = "href='$url'";
+		if( $icon != 'icon-' ) {
+			$icon = "<i class='icon-$icon'></i>";
+		}
 		
 		// target setup
 		if		($target == 'blank' || $target == '_blank' || $target == 'new' ) { $target = ' target="_blank"'; }
@@ -250,9 +252,9 @@ if (!function_exists('wellthemes_button_shortcode')) {
 		elseif	($target == 'self')		{ $target = ' target="_self"'; }
 		elseif	($target == 'top')		{ $target = ' target="_top"'; }
 		else	{$target = '';}
-		
-		$button = '<a' .$target .$title. '  ' .$id. ' class="' .$class.'" href="' .$url. '"><i class="icon-twitter icon-3x"></i>' .$content. '</a>';
-		
+			
+		$button = "<a $target $title $id $url class='$class' >$icon $content</a>";
+
 		return $button;
 	}	
 }

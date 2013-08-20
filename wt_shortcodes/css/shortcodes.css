@@ -117,3 +117,55 @@
 .wellthemes-list.color-blue li i { color: #29a1fe; }
 .wellthemes-list.color-blue li i { color: #29a1fe; }
 .wellthemes-list.color-blue li i { color: #29a1fe; }
+
+/**	
+ * Buttons
+ * ------------------------------------------------------
+ */
+
+.wellthemes-button {
+	text-decoration: none;
+	padding: 7px 15px;
+	color: white;
+
+	/* IE7 inline-block hack */
+	display: inline-block;
+	*display: inline;
+
+	margin: 5px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+
+	/* Default values, same as for white colored button */
+	background: #FFFFFF; 
+	border: 1px solid #E5E5E5;
+
+	
+}
+
+.wellthemes-button:hover {
+	opacity: 0.8;
+}
+
+.wellthemes-button.button-white:visited { color: #999; }
+
+.wellthemes-button.size-small { padding: 3px 10px; font-size: 12px;}
+.wellthemes-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
+
+.wellthemes-button.button-white 	{ color: #999999; background: #FFFFFF; border: 1px solid #E5E5E5; }
+.wellthemes-button.button-red 		{ background: #fe7272;  }
+.wellthemes-button.button-blue 		{ background: #00a2ff;  }
+.wellthemes-button.button-orange	{ background: #ff7f1a;  }
+.wellthemes-button.button-black 	{ background: #393939;  }
+.wellthemes-button.button-green 	{ background: #36e146;  }
+.wellthemes-button.button-magenta	{ background: #eb3899;  }
+
+
+.wellthemes-button.button-red:visited,		
+.wellthemes-button.button-blue:visited, 		
+.wellthemes-button.button-orange:visited,	
+.wellthemes-button.button-black:visited, 	
+.wellthemes-button.button-green:visited, 	
+.wellthemes-button.button-magenta:visited { color: white; }	

@@ -1,7 +1,10 @@
 ## Change.log for WellThemes Shortcodes Plugin
 ![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )
 
-#### v1.0 BETA - 19.08.2013
+#### v1.0 BETA - Updates: 20.08.2013
+* Stylesheet for the buttons. (i think they can go better...)
+
+#### v1.0 BETA - Updates: 19.08.2013
 
 * Added styles for the list shortcode + the main code of it is updated.
 * Added are 5 example list items. The user can pick the color for the icons from the <ul> class. (also in the shortcode)

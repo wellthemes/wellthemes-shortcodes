@@ -47,26 +47,13 @@
 					c = b.addMenu({
 						title: "Buttons"
 					});
-					a.addImmediate( c, "Default", "[button url='#' size='small' style='default'] Button text... [/button]");
-					a.addImmediate( c, "Black", "[button url='#' size='small' style='black'] Button text... [/button]");
-					a.addImmediate( c, "Blue", "[button url='#' size='small' style='blue'] Button text... [/button]");
-					a.addImmediate( c, "Brown", "[button url='#' size='small' style='brown'] Button text... [/button]");
-					a.addImmediate( c, "Coral", "[button url='#' size='small' style='coral'] Button text... [/button]");	
-					a.addImmediate( c, "Dark Brown", "[button url='#' size='small' style='dark-brown'] Button text... [/button]");					
-					a.addImmediate( c, "Dark Green", "[button url='#' size='small' style='dark-green'] Button text... [/button]");
-					a.addImmediate( c, "Green", "[button url='#' size='small' style='green'] Button text... [/button]");
-					a.addImmediate( c, "Magenta", "[button url='#' size='small' style='magenta'] Button text... [/button]");
-					a.addImmediate( c, "Maroon", "[button url='#' size='small' style='maroon'] Button text... [/button]");					
-					a.addImmediate( c, "Orange", "[button url='#' size='small' style='orange'] Button text... [/button]");					
-					a.addImmediate( c, "Pink", "[button url='#' size='small' style='pink'] Button text... [/button]");
-					a.addImmediate( c, "Purple", "[button url='#' size='small' style='purple'] Button text... [/button]");
-					a.addImmediate( c, "Red", "[button url='#' size='small' style='red'] Button text... [/button]");
-					a.addImmediate( c, "Royal Blue", "[button url='#' size='small' style='royal-blue'] Button text... [/button]");
-					a.addImmediate( c, "Sienna", "[button url='#' size='small' style='sienna'] Button text... [/button]");
-					a.addImmediate( c, "Silver", "[button url='#' size='small' style='silver'] Button text... [/button]");
-					a.addImmediate( c, "Sky Blue", "[button url='#' size='small' style='sky-blue'] Button text... [/button]");
-					a.addImmediate( c, "Teal", "[button url='#' size='small' style='teal'] Button text... [/button]");
-					a.addImmediate( c, "Yellow", "[button url='#' size='small' style='yellow'] Button text... [/button]");
+					a.addImmediate( c, "Default", "[button url='#' icon='ok' color='white' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Red", "[button url='#' icon='ok' color='red' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Blue", "[button url='#' icon='ok' color='blue' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Orange", "[button url='#' icon='ok' color='orange' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Black", "[button url='#' icon='ok' color='black' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Green", "[button url='#' icon='ok' color='green' size='medium' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Magenta", "[button url='#' icon='ok' color='magenta' size='medium' target='_blank'id=''] Button text... [/button]");
 					
 					c = b.addMenu({
 						title: "Highlight"
