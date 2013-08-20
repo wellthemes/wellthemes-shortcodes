@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: 	WellThemes Shortcodes
-	Version: 		1.0.1
+	Version: 		1.0
 	Description: 	Adds shortcodes to easily to your theme.
 	Author: 		WellThemes Team
 	Author URI: 	http://www.wellthemes.com

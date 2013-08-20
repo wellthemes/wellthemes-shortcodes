@@ -1,8 +1,6 @@
 ## Change.log for WellThemes Shortcodes Plugin
 
-#### v1.0.1
-* Change: More organized code between files.
-* Added: New shortcodes: *recent_posts, list_authors* in **query.php**
+### v1.0 Beta [![PyPI](https://version-image.appspot.com/pypi/?name=Django)](https://pypi.python.org/pypi/Django/)
 
 #### Update 19.08.2013
 * Added styles for the list shortcode + the main code of it is updated.
@@ -11,3 +9,5 @@
 * Added is the stylesheet for the shortcodes
 * Added fluid columns styles.
 * Added custom icons for the message boxes + minor style for it.
+* Change: More organized code between files.
+* Added: New shortcodes: *recent_posts, list_authors* in **query.php**
