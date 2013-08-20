@@ -1,5 +1,5 @@
 ## Change.log for WellThemes Shortcodes Plugin
-[![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )]
+![Beta](https://dl.dropbox.com/s/p5q1tgokxnyd8nc/v1-0%20beta.png )
 
 #### v1.0 BETA - 19.08.2013
 
