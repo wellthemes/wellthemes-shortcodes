@@ -20,13 +20,6 @@ if( ! function_exists('wt_toHEX') ) {
 			$str = $default;
 		}
 
-		// Check if the input string is valid HEX color.
-		if( preg_match('/^#[a-f0-9]{6}$/i', $str) OR preg_match('/^#[a-f0-9]{3}$/i', $str) ) {
-
-			// It is, so we return it as it is.
-			return $str;
-		}
-
 		if( preg_match('/^[a-f0-9]{6}$/i', $str) OR preg_match('/^[a-f0-9]{3}$/i', $str)) {
 
 			// The string is not valid, it only needs hastag.

@@ -1,5 +1,5 @@
 /*
- * Standard styling
+ * Standart styling
  * ------------------------------------------------------ 
  * Helper classes for styling the shortcodes + regular ones
  * that can be used on normal content.
@@ -163,18 +163,9 @@
 .wt-button.button-magenta	{ background: #eb3899;  }
 
 
-<<<<<<< HEAD
 .wt-button.button-red:visited,		
 .wt-button.button-blue:visited, 		
 .wt-button.button-orange:visited,	
 .wt-button.button-black:visited, 	
 .wt-button.button-green:visited, 	
 .wt-button.button-magenta:visited { color: white; }	
-=======
-.wellthemes-button.button-red:visited,		
-.wellthemes-button.button-blue:visited, 		
-.wellthemes-button.button-orange:visited,	
-.wellthemes-button.button-black:visited, 	
-.wellthemes-button.button-green:visited, 	
-.wellthemes-button.button-magenta:visited { color: white; }	
->>>>>>> 92b0776b162816330854c7e13f20d266d4874591
