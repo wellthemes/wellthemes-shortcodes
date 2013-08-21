@@ -121,7 +121,7 @@ if (!function_exists('wt_msgbox_shortcode')) {
 					$custom_icon = "<i class='icon-star'></i>";
 					break;
 
-				case 'success': 
+				case 'note': 
 					$custom_icon = "<i class='icon-pencil'></i>";
 					break;
 
