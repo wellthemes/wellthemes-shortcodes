@@ -35,45 +35,33 @@ if (!function_exists('wt_searchform')) {
 }
 
 /**
- * Data Toggles Holder
+ * SEPARATOR
  * ----------------------------------------------------------------
- * This is the outer part. Inside will be the single toggle windows.
+ * Line separator. Can be simple line, shadow or empty space. This
+ * will be decided in the stylesheet file.
  */
-if (!function_exists('wt_data_toggle')) {
+if( ! function_exists('wt_separator') ) {
 
-	function wt_data_toggle( $atts, $content = NULL ) {
+	function wt_separator( $atts ) {
 
-		$content = strip_tags( $content, '<br>' );
+		extract(shortcode_atts( array(
+			'height' 	=> 'medium',
+			'type'		=> 'line',
+		), $atts ));
 
-		// The custom search form
-		$output =  	"<div class='panel-group'>";
-		$output .= 		do_shortcode( $content );
-		$output .= 	"</div>";
+		// Strip the commas from the atts.
+		// By default the height is " small, big... ", same
+		// goes for the type.
+		$height = strtok($height, ',');
+		$type = strtok($type, ',');
 
-		return $output;
+		// Collect and store the information for the class.
+		$class = $height . ' ' . $type;
 
+		// Return the print HTML line.
+		return "<div class='wt-separator clearix $class'><!-- empty --></div>";
 	}
-	
-	add_shortcode('data_toggle', 'wt_data_toggle');
-	
-}
 
-/**
- * Data Toggles Elements
- * ----------------------------------------------------------------
- * The toggle elements them self.
- */
-if (!function_exists('wt_data_toggle_inner')) {
-
-	function wt_data_toggle_inner( $atts, $content = NULL ) {
-
-		extract(shortcode_atts(array(
-			'default' 	=> 'false',
-		), $atts)); 
-
-		return $output;
-	}
-	
-	add_shortcode('dt_inner', 'wt_data_toggle_inner');
+	add_shortcode( 'separator', 'wt_separator' );
 
 }

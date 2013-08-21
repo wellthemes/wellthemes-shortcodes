@@ -183,8 +183,44 @@
  * ------------------------------------------------------
  */
 
-.spoiler,
-.spoiler a { color: transparent; text-shadow: 0 0 8px rgba(0,0,0,0.5); }
+.wt-spoiler,
+.wt-spoiler a { color: transparent; text-shadow: 0 0 8px rgba(0,0,0,0.5); }
 
-.spoiler:hover,
-.spoiler:hover a { color: #444; background: transparent; text-shadow: none;}
+.wt-spoiler:hover,
+.wt-spoiler:hover a { 
+	color: #444; 
+	background: transparent; 
+	text-shadow: none;
+}
+
+.wt-separator { 
+	display: block; 
+	width: 100%; 
+	clear: both;
+	overflow: hidden;
+	height: 1px;
+}
+
+.wt-separator.small {
+	margin: 10px 0;
+}
+
+.wt-separator.medium {
+	margin: 20px 0;
+}
+
+.wt-separator.big {
+	margin: 30px 0;
+}
+
+.wt-separator.huge {
+	margin: 40px 0;
+}
+
+.wt-separator.line {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.wt-separator.double-line {
+	border-bottom: 4px double #ededed
+}

@@ -98,12 +98,14 @@
 
 					a.addImmediate( c, "Recent Posts List", "[recent_posts title='Recent Posts' limit='5' order='ASC' category='0']");
 					a.addImmediate( c, "Authors", "[print_authors display_posts=true exclude_admin=false show_fullname=true hide_empty=false]");
+					a.addImmediate( c, "List Pages", "[list_pages]");
 					
 					c = b.addMenu({
 						title: "Elements"
 					});
 
 					a.addImmediate( c, "Search Form", "[search button_text='Search']");
+					a.addImmediate( c, "Content separator", "[separator type='line, double-line, dotted, shadow-1, shadow-2' height='small, medium, big, huge' ]");
 				});
                 
                 return btn;

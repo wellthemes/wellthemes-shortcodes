@@ -5,6 +5,12 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
+#### v1.0 BETA - Updates: 21.08.2013
+* Helper function file is now class file.
+* Added is separator shortcode, with better options. Now the user will see all possible shortcode options and if he doensn't pick the one he wants, the first one will be used. (validation)
+* Added `[list_pages]` shortcode in query shortcodes.
+* Fixed spoiler shortcode prefix.
+
 #### v1.0 BETA - Updates: 20.08.2013
 * Changed organization of files. Now instead of Editor, the folder is named Admin, also inside inc folder is php folder for libraries and helper files. There also can be add js folder for interactovity.
 * Added spoiler shortcode

@@ -13,7 +13,7 @@
  */
 
 // Help functions
-require_once( dirname(__FILE__) . '/lib/php/helpers.php');
+require_once( dirname(__FILE__) . '/lib/php/helpers.class.php');
 
 // Load Social shortcodes. (facebook, twitter, etc.)
 require_once( dirname(__FILE__) . '/shortcodes/social.php');

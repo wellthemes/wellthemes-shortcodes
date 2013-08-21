@@ -8,7 +8,7 @@
  * List of the shortcodes in this file:
  * - Recent Posts
  * - List Authors
- *
+ * - List Pages
  */
 
 /**
@@ -65,7 +65,6 @@ if (!function_exists('wt_get_recent_posts_list')) {
  * @param array $atts Shortcode attributes
  * @return string Output html as list
  */
-add_shortcode('print_authors', 'wt_authors');
 if( ! function_exists( 'wt_authors' ) ) {
 
 	function wt_authors( $atts ) {
@@ -77,7 +76,26 @@ if( ! function_exists( 'wt_authors' ) ) {
 			), $atts ) );
 
 		$list = list_authors($display_posts, $exclude_admin, $show_fullname, $hide_empty);
-		return "<div class='author-list'>" . $list . "</div>";
+		return "<div class='author-list'>$list</div>";
 	}
+	
+	add_shortcode( 'print_authors', 'wt_authors' );
+
+}
+
+/**
+ * LIST PAGES
+ * ----------------------------------------------------------------
+ * 
+ * @param array $atts Shortcode attributes
+ * @return string Output html as list
+ */
+if ( ! function_exists('wt_list_pages') ) {
+
+	function wt_list_pages( $atts ) {
+		wp_list_pages( array( 'sort_column' => 'menu_order','title_li' => '' ) );
+	}
+
+	add_shortcode( 'list_pages', 'wt_list_pages' );
 
 }

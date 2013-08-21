@@ -150,7 +150,6 @@ if (!function_exists('wt_msgbox_shortcode')) {
  * LISTS
  * ----------------------------------------------------------------
  */
-add_shortcode( 'list', 'wt_list_shortcode' );
 function run_list_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
@@ -163,25 +162,27 @@ function run_list_shortcode( $content ) {
 add_filter( 'the_content', 'run_list_shortcode', 7 );
 
 if (!function_exists('wt_list_shortcode')) {
+	
 	function wt_list_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
 			'icon_color' => '',
 		   ), $atts));
 
-		$class = 'wt-list ';
-		$class .= 'color-';
-		$class .= $icon_color; 
+		// Build styles. 
+		$class = 'wt-list ' . $icon_color;
 
-		$list = '<ul class="'.$class.'">'.$content.'</ul>';
+		$list = "<ul class='$class'>". do_shortcode( $content ) ."</ul>";
 		return $list;
 	}	
+
+	add_shortcode( 'list', 'wt_list_shortcode' );
+
 }
 
 /**
  * SINGLE LIST ITEM
  * ----------------------------------------------------------------
  */
-add_shortcode( 'list_item', 'wt_list_item_shortcode' );
 function run_list_item_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
@@ -201,13 +202,15 @@ if (!function_exists('wt_list_item_shortcode')) {
 
 		return "<li><i class='icon-$icon'></i>" . $content . '</li>';		
 	}
+
+	add_shortcode( 'list_item', 'wt_list_item_shortcode' );
+
 }
 
 /**
  * BUTTONS
  * ----------------------------------------------------------------
  */
-add_shortcode( 'button', 'wt_button_shortcode' );
 function run_button_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
@@ -259,13 +262,15 @@ if (!function_exists('wt_button_shortcode')) {
 
 		return $button;
 	}	
+
+	add_shortcode( 'button', 'wt_button_shortcode' );
+
 }
 
 /**
  * HIGHLIGHT
  * ----------------------------------------------------------------
  */
-add_shortcode( 'highlight', 'wt_highlight_shortcode' );
 function run_highlight_shortcode( $content ) {
 	global $shortcode_tags;
 	$orig_shortcode_tags = $shortcode_tags;
@@ -287,13 +292,13 @@ if (!function_exists('wt_highlight_shortcode')) {
 		$class = 'wt-highlight';
 		$style = '';
 
-		if( ! wt_isHEX( $color ) && $color != '' ) {
+		if( ! WT_Helpers::isHEX( $color ) && $color != '' ) {
 			$class .= ' wt-highlight-';
 			$class .= $color;
 		} else {
 			// If the user didnt give color, the default is #FFA
 			// If he did, it will be validated.
-			wt_toHEX( $color, '#ffa' );
+			WT_Helpers::toHEX( $color, '#ffa' );
 			$style = "style='background-color: $color'";
 		}
 
@@ -301,6 +306,9 @@ if (!function_exists('wt_highlight_shortcode')) {
 		$highlight = "<span $style class='$class'>$content</span>";
 		return $highlight;
 	}
+
+	add_shortcode( 'highlight', 'wt_highlight_shortcode' );
+
 }
 
 /**
@@ -334,7 +342,7 @@ if (!function_exists('wt_dropcap_shortcode')) {
 if (!function_exists('wt_spoiler')) {
 
 	function wt_spoiler( $atts, $content = null ) {
-		return "<span class='spoiler'>" . do_shortcode($content) . "</span>";
+		return "<span class='wt-spoiler'>" . do_shortcode($content) . "</span>";
 	}
 	
 	add_shortcode('spoiler', 'wt_spoiler');
