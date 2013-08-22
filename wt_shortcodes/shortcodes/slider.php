@@ -61,7 +61,7 @@ if (!function_exists('wt_slider_shortcode')) {
 		</script>
 
 	<?php
-		$slider = "<div class='wt-slider'><ul>". do_shortcode( $content ) ."</ul></div>";
+		$slider = "<div class='wt-slider'><ul class='wt-slider-holder'>". do_shortcode( $content ) ."</ul></div>";
 		return $slider;
 		
 	}	
@@ -92,7 +92,7 @@ if (!function_exists('wt_slide_shortcode')) {
 		   ), $atts));
 		
 		$output = '';
-		$output .= '<li>';
+		$output .= "<li class='wt-slider-item' >";
 		
 		if (!empty($title)){
 			$output .= '<h3>'.$title.'</h3>';

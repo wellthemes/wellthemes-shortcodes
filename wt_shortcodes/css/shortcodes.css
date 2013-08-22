@@ -152,13 +152,13 @@
 .wt-button.size-small { padding: 3px 10px; font-size: 12px;}
 .wt-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
 
-.wt-button.button-white 	{ color: #999999; background: #FFFFFF; border: 1px solid #E5E5E5; }
-.wt-button.button-red 		{ background: #fe7272;  }
-.wt-button.button-blue 		{ background: #00a2ff;  }
-.wt-button.button-orange	{ background: #ff7f1a;  }
-.wt-button.button-black 	{ background: #393939;  }
-.wt-button.button-green 	{ background: #36e146;  }
-.wt-button.button-magenta	{ background: #eb3899;  }
+.wt-button.button-white { color: #999999; background: #FFFFFF; border: 1px solid #E5E5E5; }
+.wt-button.button-red { background: #fe7272;  }
+.wt-button.button-blue { background: #00a2ff;  }
+.wt-button.button-orange { background: #ff7f1a;  }
+.wt-button.button-black { background: #393939;  }
+.wt-button.button-green { background: #36e146;  }
+.wt-button.button-magenta { background: #eb3899;  }
 
 
 .wt-button.button-red:visited,		
@@ -174,7 +174,7 @@
  * ------------------------------------------------------
  */
 .wt-highlight.wt-highlight-Blue { background: #a3dffe; }
-.wt-highlight.wt-highlight-Red { background: #fa8a8a; }
+.wt-highlight.wt-highlight-Red 	{ background: #fa8a8a; }
 .wt-highlight.wt-highlight-Green { background: #74ee88; }
 .wt-highlight.wt-highlight-Orange { background: #ffb38a; }
 
@@ -183,9 +183,60 @@
  * ------------------------------------------------------
  */
  
-.wt-slider { position: relative; overflow: auto; border: 1px solid red;}
-.wt-slider ul { list-style: none; padding: 0; margin: 0; }
-.wt-slider ul li { float: left; }
+.wt-slider { 
+	position: relative; 
+	overflow: hidden; 
+	border: 1px solid red;
+	padding-bottom: 50px;
+	border: 3px solid #f0f0f0;
+	box-shadow: inset 0px 0px 1px #555;
+}
+
+.wt-slider .wt-slider-holder { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 	
+}
+
+.wt-slider .wt-slider-item { 
+	float: left; 
+	width: 100%; 
+}
+
+.wt-slider .dots {
+	bottom: 8px;
+	display: inline-block;
+	left: 45%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	padding: 0px 10px;
+	border-radius: 8px;
+}
+.wt-slider .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+
+	text-indent: -999em;
+
+	border: 2px solid #fff;
+	border-radius: 6px;
+
+	cursor: pointer;
+	opacity: .4;
+
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+
+.wt-slider .dots li.active {
+	background: #fff;
+	opacity: 1;
+}
+
 
 /**	
  * Tabs
