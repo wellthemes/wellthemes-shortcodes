@@ -46,7 +46,7 @@ if (!function_exists('wt_tabs_shortcode')) {
 		
 		if( count($tab_titles) ){
 		    $output .= '<div class="wt-tabs">';
-			$output .= '<ul class="ui-tabs-nav">';
+			$output .= '<ul class="ui-tabs-nav clearfix">';
 			foreach( $tab_titles as $tab_title ){
 				$output .= '<li><a href="#wt-tab-'. sanitize_title( $tab_title[0] ) .'">' . $tab_title[0] . '</a></li>';
 			}

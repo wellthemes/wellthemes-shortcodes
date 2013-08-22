@@ -179,6 +179,58 @@
 .wt-highlight.wt-highlight-Orange { background: #ffb38a; }
 
 /**	
+ * Slider
+ * ------------------------------------------------------
+ */
+ 
+.wt-slider { position: relative; overflow: auto; border: 1px solid red;}
+.wt-slider ul { list-style: none; padding: 0; margin: 0; }
+.wt-slider ul li { float: left; }
+
+/**	
+ * Tabs
+ * ------------------------------------------------------
+ */
+.wt-tabs {
+	border: 3px solid #f0f0f0;
+	box-shadow: inset 0px 0px 1px #555;
+}
+
+.wt-tabs ul.ui-tabs-nav {
+	background: linear-gradient(#fafafa, #E6E6E6);
+	margin: 1px;
+}
+
+.wt-tabs ul.ui-tabs-nav li {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.wt-tabs ul.ui-tabs-nav li .ui-tabs-anchor {
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 4px 40px;
+	color: #777;
+	display: table-cell;
+	border-bottom: 2px solid #DADADA;
+	border-left: 1px solid #fcfcfc;
+	border-right: 1px solid #eee;
+}
+
+.wt-tabs ul.ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor {
+	border-bottom: 2px solid #FF5D05;
+	background: linear-gradient(#eaeaea, #fafafa);
+	outline: none
+}
+
+.wt-tabs .tab-content {
+	padding: 20px;
+}
+
+/**	
  * Other Styles for the Shortcode Plugin
  * ------------------------------------------------------
  */
@@ -224,12 +276,3 @@
 .wt-separator.double-line {
 	border-bottom: 4px double #ededed
 }
-
-/**	
- * Slider
- * ------------------------------------------------------
- */
- 
-.wt-slider { position: relative; overflow: auto; border: 1px solid red;}
-.wt-slider ul { list-style: none; padding: 0; margin: 0; }
-.wt-slider ul li { float: left; }

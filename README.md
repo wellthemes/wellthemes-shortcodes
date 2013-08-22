@@ -6,7 +6,8 @@
 ## Changes log for WellThemes Shortcodes Plugin
 
 #### v1.0 BETA - Updates: 22.08.2013
-* Added Tabs shortcodes. Need to add stylying.
+* Added styles for the tabs.
+* Added Tabs shortcodes. <s>Need to add stylying.</s>
 * Added Slider shortcodes. Need to add stylying.
 
 #### v1.0 BETA - Updates: 21.08.2013

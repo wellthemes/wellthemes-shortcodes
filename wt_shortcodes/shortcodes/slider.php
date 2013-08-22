@@ -6,6 +6,7 @@
  * 
  * List of the shortcodes in this file:
  * - Slider
+ * - Slider Item
  */
 
 
