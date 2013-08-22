@@ -41,8 +41,8 @@ if( !function_exists ('wellthemes_shortcodes_scripts') ) :
 		wp_register_style( 'wellthemes_shortcodes_css', plugin_dir_url( __FILE__ ) . 'css/shortcodes.css' );	
 		wp_enqueue_style( 'wellthemes_shortcodes_css' );
 
-		// Load jQuery, build in to the wp core
-		wp_enqueue_script( 'jquery' );
+		//Register required scripts
+		wp_register_script( 'wt_tabs', plugin_dir_url( __FILE__ ) . 'js/wt_tabs.js', array ( 'jquery', 'jquery-ui-tabs'), '1.0', true );
 
 	}
 

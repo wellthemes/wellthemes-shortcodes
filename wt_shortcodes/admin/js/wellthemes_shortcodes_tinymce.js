@@ -91,6 +91,8 @@
 					a.addImmediate( c, "Vimeo", "[video type='vimeo' id='33716408' width='500' height='300' /]");
 															
 					a.addImmediate( b, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
+					
+					a.addImmediate( b, "Tabs", "[tabs]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='First Tab'] Content goes here... [/tab]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='Second Tab'] Content goes here... [/tab]<br />[/tabs]<br /><br />" );
 
 					c = b.addMenu({
 						title: "Query"

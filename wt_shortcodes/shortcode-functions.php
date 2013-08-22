@@ -29,3 +29,6 @@ require_once( dirname(__FILE__) . '/shortcodes/query.php');
 
 // Load Elements shortcodes. (search form, sliders, etc.)
 require_once( dirname(__FILE__) . '/shortcodes/elements.php');
+
+// Load Tabs shortcodes. 
+require_once( dirname(__FILE__) . '/shortcodes/tabs.php');
