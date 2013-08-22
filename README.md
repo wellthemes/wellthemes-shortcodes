@@ -5,6 +5,10 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
+#### v1.0 BETA - Updates: 22.08.2013
+* Added Tabs shortcodes. Need to add stylying.
+* Added Slider shortcodes. Need to add stylying.
+
 #### v1.0 BETA - Updates: 21.08.2013
 * Helper function file is now class file.
 * Added is separator shortcode, with better options. Now the user will see all possible shortcode options and if he doensn't pick the one he wants, the first one will be used. (validation)

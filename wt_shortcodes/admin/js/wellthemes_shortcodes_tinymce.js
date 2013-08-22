@@ -93,6 +93,8 @@
 					a.addImmediate( b, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
 					
 					a.addImmediate( b, "Tabs", "[tabs]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='First Tab'] Content goes here... [/tab]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='Second Tab'] Content goes here... [/tab]<br />[/tabs]<br /><br />" );
+					
+					a.addImmediate( b, "Slider", "[slider speed='500' delay='3000' nav='yes']<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='First Slide'] Content goes here... [/slide]<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='Second Slide'] Content goes here... [/slide]<br />[/slider]<br /><br />" );
 
 					c = b.addMenu({
 						title: "Query"

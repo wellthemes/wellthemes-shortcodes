@@ -224,3 +224,12 @@
 .wt-separator.double-line {
 	border-bottom: 4px double #ededed
 }
+
+/**	
+ * Slider
+ * ------------------------------------------------------
+ */
+ 
+.wt-slider { position: relative; overflow: auto; border: 1px solid red;}
+.wt-slider ul { list-style: none; padding: 0; margin: 0; }
+.wt-slider ul li { float: left; }

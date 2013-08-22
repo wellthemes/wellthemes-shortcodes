@@ -32,3 +32,6 @@ require_once( dirname(__FILE__) . '/shortcodes/elements.php');
 
 // Load Tabs shortcodes. 
 require_once( dirname(__FILE__) . '/shortcodes/tabs.php');
+
+// Load Slider shortcodes. 
+require_once( dirname(__FILE__) . '/shortcodes/slider.php');
