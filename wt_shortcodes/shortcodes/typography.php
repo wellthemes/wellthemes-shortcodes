@@ -348,3 +348,25 @@ if (!function_exists('wt_spoiler')) {
 	add_shortcode('spoiler', 'wt_spoiler');
 
 }
+
+/**
+ * PANEL
+ * ----------------------------------------------------------------
+ */
+if( ! function_exists('wt_panel') ) {
+
+	function wt_panel( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+			'type' => 'flat',
+			'color' => 'blue'
+		), $atts ));
+
+		$color = strtok($color, ',');
+		$type = strtok($type, ',');
+
+		return "<div class='wt-panel $type $color'>" . do_shortcode( $content ) . "</div>";
+	}
+
+	add_shortcode( 'panel', 'wt_panel' );
+
+}

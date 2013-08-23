@@ -139,15 +139,11 @@
 	/* Default values, same as for white colored button */
 	background: #FFFFFF; 
 	border: 1px solid #E5E5E5;
-
-	
 }
 
 .wt-button:hover {
 	opacity: 0.8;
 }
-
-.wt-button.button-white:visited { color: #999; }
 
 .wt-button.size-small { padding: 3px 10px; font-size: 12px;}
 .wt-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
@@ -160,13 +156,13 @@
 .wt-button.button-green { background: #36e146;  }
 .wt-button.button-magenta { background: #eb3899;  }
 
-
 .wt-button.button-red:visited,		
 .wt-button.button-blue:visited, 		
 .wt-button.button-orange:visited,	
 .wt-button.button-black:visited, 	
 .wt-button.button-green:visited, 	
 .wt-button.button-magenta:visited { color: white; }	
+.wt-button.button-white:visited { color: #999; }
 
 
 /**	
@@ -237,7 +233,6 @@
 	opacity: 1;
 }
 
-
 /**	
  * Tabs
  * ------------------------------------------------------
@@ -279,6 +274,38 @@
 
 .wt-tabs .tab-content {
 	padding: 20px;
+}
+
+/**	
+ * Panels
+ * ------------------------------------------------------
+ */
+.wt-panel { 
+	display: block; 
+	background: #f0f0f0;
+	padding: 20px;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.wt-panel h1,
+.wt-panel h2,
+.wt-panel h3,
+.wt-panel h4 { margin: 0; }
+
+
+.wt-panel p:first-child {
+	margin-top: 0;
+}
+
+.wt-panel p:last-child {
+	margin-bottom: 0;
+}
+
+.wt-panel.flat.blue {
+	background: #0096ff;
+	color: white;
+	border: 6px solid #168bdc;
 }
 
 /**	
@@ -327,3 +354,4 @@
 .wt-separator.double-line {
 	border-bottom: 4px double #ededed
 }
+

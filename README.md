@@ -6,6 +6,9 @@
 ## Changes log for WellThemes Shortcodes Plugin
 
 #### v1.0 BETA - Updates: 22.08.2013
+* Added panel shortcode. TODO: More stylings and fix css overwrite.
+
+#### v1.0 BETA - Updates: 22.08.2013
 * Added styles for the slider.
 * Added styles for the tabs.
 * Added Tabs shortcodes.

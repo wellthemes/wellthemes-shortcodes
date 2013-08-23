@@ -61,6 +61,7 @@
 					a.addImmediate( c, "Highlight", "[highlight color='yellow'] Content goes here... [/highlight]");
 					a.addImmediate( c, "Spoiler", "[spoiler] Content goes here... [/spoiler]");
 					a.addImmediate( c, "Dropcap", "[dropcap style='square']A[/dropcap]");
+					a.addImmediate( c, "Panel", "[panel style='flat, shaded' color='blue, red, green, orange, magenda, black, white']Content goes here ...[/panel]");
 					
 					c = b.addMenu({
 						title: "Lists"

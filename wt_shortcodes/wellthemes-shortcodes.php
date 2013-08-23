@@ -46,7 +46,7 @@ if( !function_exists ('wellthemes_shortcodes_scripts') ) :
 		wp_register_script( 'wt_slider', plugin_dir_url( __FILE__ ) . 'js/unslider.min.js', array ( 'jquery'), '1.0', true );
 	}
 
-	add_action('wp_enqueue_scripts', 'wellthemes_shortcodes_scripts');
+	add_action( 'wp_enqueue_scripts', 'wellthemes_shortcodes_scripts' );
 
 endif;
 
