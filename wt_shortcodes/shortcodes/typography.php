@@ -353,9 +353,20 @@ if (!function_exists('wt_spoiler')) {
  * PANEL
  * ----------------------------------------------------------------
  */
-if( ! function_exists('wt_panel') ) {
+function run_panel_shortcode( $content ) {
+	global $shortcode_tags;
+	$orig_shortcode_tags = $shortcode_tags;
+	remove_all_shortcodes(); 
+	add_shortcode( 'panel', 'wt_panel_shortcode' );	
+	$content = do_shortcode( $content );
+	$shortcode_tags = $orig_shortcode_tags; 
+	return $content;
+} 
+add_filter( 'the_content', 'run_panel_shortcode', 7 );
 
-	function wt_panel( $atts, $content = null ) {
+if( ! function_exists('wt_panel_shortcode') ) {
+
+	function wt_panel_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
 			'type' => 'flat',
 			'color' => 'blue'
@@ -367,6 +378,6 @@ if( ! function_exists('wt_panel') ) {
 		return "<div class='wt-panel $type $color'>" . do_shortcode( $content ) . "</div>";
 	}
 
-	add_shortcode( 'panel', 'wt_panel' );
+	add_shortcode( 'panel', 'wt_panel_shortcode' );
 
 }
