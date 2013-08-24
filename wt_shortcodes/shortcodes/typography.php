@@ -232,17 +232,28 @@ if (!function_exists('wt_button_shortcode')) {
 			'target'	=> '',
 			'size'      => '',
 			'icon'		=> '',
-			'color' 	=> 'normal'			
+			'color' 	=> '',
+			'type'		=> '',	
 		), $atts));
+
+		// Get the first type of multy optional settings.
+		$color = strtok($color, ',');
+		$type = strtok($type, ',');
+		$size = strtok($size, ',');
 		
 		// variable setup
 		$title = ($title) ? ' title="'.$title .'"' : '';
 		$id = ($id) ? ' id="'.$id .'"' : '';
 		
+		// Buttons class and the button color.
 		$class = 'wt-button ';
 		$class .= 'button-';
 		$class .= $color; 
 		
+		// Tye type (flat or shaded)
+		$class .= ' ' . $type;
+
+		// And the size
 		$class .= ' size-';
 		$class .= $size;
 
@@ -368,8 +379,8 @@ if( ! function_exists('wt_panel_shortcode') ) {
 
 	function wt_panel_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
-			'type' => 'flat',
-			'color' => 'blue'
+			'type' => '',
+			'color' => ''
 		), $atts ));
 
 		$color = strtok($color, ',');

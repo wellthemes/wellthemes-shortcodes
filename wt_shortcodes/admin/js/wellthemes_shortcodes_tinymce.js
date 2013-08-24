@@ -45,23 +45,13 @@
 					a.addImmediate( c, "Warning", "[box style='warning'] Content goes here... [/box]<br /><br />");
 					
 					c = b.addMenu({
-						title: "Buttons"
-					});
-					a.addImmediate( c, "Default", "[button url='#' icon='ok' color='white' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Red", "[button url='#' icon='ok' color='red' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Blue", "[button url='#' icon='ok' color='blue' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Orange", "[button url='#' icon='ok' color='orange' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Black", "[button url='#' icon='ok' color='black' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Green", "[button url='#' icon='ok' color='green' size='medium' target='_blank'id=''] Button text... [/button]");
-					a.addImmediate( c, "Magenta", "[button url='#' icon='ok' color='magenta' size='medium' target='_blank'id=''] Button text... [/button]");
-					
-					c = b.addMenu({
 						title: "Typography"
 					});
+					a.addImmediate( c, "Button", "[button type='flat, shaded' url='#' icon='ok' color='white, red, blue, orange, black, green, magente' size='small, medium, big' target='_blank'id=''] Button text... [/button]");
 					a.addImmediate( c, "Highlight", "[highlight color='yellow'] Content goes here... [/highlight]");
 					a.addImmediate( c, "Spoiler", "[spoiler] Content goes here... [/spoiler]");
 					a.addImmediate( c, "Dropcap", "[dropcap style='square']A[/dropcap]");
-					a.addImmediate( c, "Panel", "[panel style='flat, shaded' color='blue, red, green, orange, magenda, black, white']Content goes here ...[/panel]");
+					a.addImmediate( c, "Panel", "[panel style='flat, shaded' color='blue, red, green, orange, magenta, black, white']Content goes here ...[/panel]");
 					
 					c = b.addMenu({
 						title: "Lists"
@@ -90,11 +80,8 @@
 					});
 					a.addImmediate( c, "Youtube", "[video type='youtube' id='Bag1gUxuU0g' width='500' height='300'  /]");
 					a.addImmediate( c, "Vimeo", "[video type='vimeo' id='33716408' width='500' height='300' /]");
-															
 					a.addImmediate( b, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
-					
 					a.addImmediate( b, "Tabs", "[tabs]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='First Tab'] Content goes here... [/tab]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='Second Tab'] Content goes here... [/tab]<br />[/tabs]<br /><br />" );
-					
 					a.addImmediate( b, "Slider", "[slider speed='500' delay='3000' nav='yes']<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='First Slide'] Content goes here... [/slide]<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='Second Slide'] Content goes here... [/slide]<br />[/slider]<br /><br />" );
 
 					c = b.addMenu({

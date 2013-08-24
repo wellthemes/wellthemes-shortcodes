@@ -5,6 +5,12 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
+#### v1.0 BETA - Updates 23.08.2013
+* Changed Stylesheet for buttons and panels.
+* Added shaded buttons version.
+* Minor fixes and rearange in shortcode picker.
+* Minor empty space changes.
+
 #### v1.0 BETA - Updates: 22.08.2013
 * Added higher priority for the shortcodes stylesheet
 * Added panel shortcode.
