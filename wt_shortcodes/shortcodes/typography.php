@@ -13,6 +13,8 @@
  * - Highlight
  * - Dropcaps
  * - Spoiler
+ * - Panel
+ * - Label
  */
 
 
@@ -390,5 +392,33 @@ if( ! function_exists('wt_panel_shortcode') ) {
 	}
 
 	add_shortcode( 'panel', 'wt_panel_shortcode' );
+
+}
+
+/**
+ * SPOILERS
+ * ----------------------------------------------------------------
+ */
+if (!function_exists('wt_label')) {
+
+	function wt_label( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+			'color' 	=> '',
+			'rounded' 	=> '',
+			'type'		=> ''
+		), $atts ));
+
+		if( $rounded == 'true' ) $rounded = 'rounded';
+		if( $rounded == 'false' ) $rounded = '';
+
+		// Strip the extra tags
+		$color = strtok($color, ',');
+		$type = strtok($type, ',');
+
+		// Print the shortcode (only content, no other shortcodes inside!)
+		return "<span class='wt-label wt-label-$color $rounded $type'>$content</span>";
+	}
+	
+	add_shortcode('label', 'wt_label');
 
 }

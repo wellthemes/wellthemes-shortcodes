@@ -5,6 +5,11 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
+#### v1.0 BETA - Updates 27.08.2013
+* Added `label` shortcode _colors, flat/shaded, rectangle/rounded_
+* Fixed messy background properties for panel shortcode
+* Added icons for the shortcode picker in editor
+
 #### v1.0 BETA - Updates 23.08.2013
 * Changed Stylesheet for buttons and panels.
 * Added shaded buttons version.

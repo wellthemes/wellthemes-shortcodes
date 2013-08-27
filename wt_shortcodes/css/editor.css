@@ -15,9 +15,18 @@
 	padding: 5px;
 }
 
+.wp_themeSkin .mceMenu span.mceText, 
+.wp_themeSkin .mceMenu .mcePreview { font-size: 14px; }
+
+.wp_themeSkin tr, 
+.wp_themeSkin td { padding: 5px 0 ; }
 
 #menu_content_content_wellthemes_button_menu_tbl table .mceMenuActive ,
 .mceSplitButtonMenu .mceMenu table .mceMenuActive {
 	background: #EB643B;
 	color: white;
 }
+
+.mceSplitButtonMenu,
+.wp_themeSkin,
+.mceNoIcons { margin-left: 7px; margin-top: -4px; }
