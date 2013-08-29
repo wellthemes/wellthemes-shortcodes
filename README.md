@@ -19,8 +19,6 @@
 #### v1.0 BETA - Updates: 22.08.2013
 * Added higher priority for the shortcodes stylesheet
 * Added panel shortcode.
-
-#### v1.0 BETA - Updates: 22.08.2013
 * Added styles for the slider.
 * Added styles for the tabs.
 * Added Tabs shortcodes.
