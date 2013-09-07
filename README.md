@@ -5,13 +5,13 @@
 
 ---
 ##### Current list of the shortcodes:
-__Elements:__ `[searchform]`
-__Media:__ `[lightbox_image]`, `[video]`
-__Query:__ `[recent_posts]`, `[print_authors]`, `[list_pages]`
-__Slider:__ `[slider]`
-__Social:__ `[twitter]`, `[facebook]`, `[gplus]`, `[digg]`, `[stumbleupon]`, `[linkedin]`
-__Tabs:__ `[tabs]` -> `[tab]`
-__Typography__ `[column]`, `[box]`, `[list]`, `[list_item]`, `[button]`, `[highlight]`, `[dropcap]`, `[spoiler]`, `[panel]`, `[label]`
+* __Elements:__ `[searchform]`
+* __Media:__ `[lightbox_image]`, `[video]`
+* __Query:__ `[recent_posts]`, `[print_authors]`, `[list_pages]`
+* __Slider:__ `[slider]`
+* __Social:__ `[twitter]`, `[facebook]`, `[gplus]`, `[digg]`, `[stumbleupon]`, `[linkedin]`
+* __Tabs:__ `[tabs]` -> `[tab]`
+* __Typography__ `[column]`, `[box]`, `[list]`, `[list_item]`, `[button]`, `[highlight]`, `[dropcap]`, `[spoiler]`, `[panel]`, `[label]`
 
 ## Changes log for WellThemes Shortcodes Plugin
 
