@@ -335,7 +335,7 @@ if (!function_exists('wt_dropcap_shortcode')) {
 			'style' => 'default',
 		   ), $atts));
 	   
-		$class  = 'wt-dropcap-';
+		$class  = 'wt-dropcap ';
 		$class .= $style; 
 		
 		$content = do_shortcode($content);

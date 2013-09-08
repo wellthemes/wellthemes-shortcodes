@@ -144,7 +144,7 @@
 	border: none;
 	border-bottom: 3px solid #b93207;
 	border-radius: 2px;
-	color: #fff;
+	color: #fff !important;
 	display: inline-block;
 	padding: 9px 20px 8px;
 	text-decoration: none;
@@ -159,6 +159,7 @@
 	opacity: 0.8;
 	text-decoration: none !important;
 	cursor: pointer;
+	color: white;
 }
 
 .wt-button.size-small { padding: 3px 10px; font-size: 12px;}
@@ -220,10 +221,11 @@
  * Highlights
  * ------------------------------------------------------
  */
-.wt-highlight.wt-highlight-Blue { background: #a3dffe; }
-.wt-highlight.wt-highlight-Red 	{ background: #fa8a8a; }
-.wt-highlight.wt-highlight-Green { background: #74ee88; }
-.wt-highlight.wt-highlight-Orange { background: #ffb38a; }
+.wt-highlight.wt-highlight-blue { background: #a3dffe; }
+.wt-highlight.wt-highlight-red 	{ background: #fa8a8a; }
+.wt-highlight.wt-highlight-green { background: #74ee88; }
+.wt-highlight.wt-highlight-orange { background: #ffb38a; }
+.wt-highlight.wt-highlight-yellow { background: #ffffaa; }
 
 /**	
  * Slider
@@ -294,8 +296,9 @@
 }
 
 .wt-tabs ul.ui-tabs-nav {
-	background: linear-gradient(#fafafa, #E6E6E6);
+	border-bottom: 1px solid #f0f0f0;
 	margin: 1px;
+	padding: 0;
 }
 
 .wt-tabs ul.ui-tabs-nav li {
@@ -312,15 +315,16 @@
 	padding: 4px 40px;
 	color: #777;
 	display: table-cell;
-	border-bottom: 2px solid #DADADA;
-	border-left: 1px solid #fcfcfc;
+	border-left: 1px solid #eee;
+}
+
+.wt-tabs ul.ui-tabs-nav li:last-child .ui-tabs-anchor {
 	border-right: 1px solid #eee;
 }
 
 .wt-tabs ul.ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor {
 	border-bottom: 2px solid #FF5D05;
-	background: linear-gradient(#eaeaea, #fafafa);
-	outline: none
+	outline: none;
 }
 
 .wt-tabs .tab-content {
@@ -395,9 +399,15 @@
 
 .wt-panel.shaded,
 .wt-button.shaded,
-.wt-button.shaded {
+.wt-label.shaded {
+	font-weight: normal;
+	font-size: 14px;
 	border-radius: 5px;
-	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.5);
+	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.wt-button.shaded:active {
+	margin-bottom: 3px;
 }
 
 .wt-panel.shaded.blue,
@@ -407,7 +417,7 @@
 	border-bottom: 3px solid #168bdc;
 	border: 1px solid #258dc8;
 	background: #279dd1;
-	background: linear-gradient(#258dc8, #2995c4);
+	background: linear-gradient(#3aa0db, #2281b7);
 }
 
 .wt-panel.shaded.red,
@@ -511,7 +521,7 @@
 }
 
 /**	
- * Other Styles for the Shortcode Plugin
+ * Spoilers
  * ------------------------------------------------------
  */
 
@@ -524,6 +534,11 @@
 	background: transparent; 
 	text-shadow: none;
 }
+
+/**	
+ * Separator
+ * ------------------------------------------------------
+ */
 
 .wt-separator { 
 	display: block; 
@@ -555,4 +570,39 @@
 
 .wt-separator.double-line {
 	border-bottom: 4px double #ededed
+}
+
+.wt-separator.shadow-1 {
+	height: 32px;
+	background: url("../img/shadow-1.png") no-repeat center center;
+	max-width: 765px;
+}
+
+/**	
+ * Dropcap
+ * ------------------------------------------------------
+ */
+
+.wt-dropcap {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 4em;
+	float: left;
+	line-height: 1em;
+	padding: 0 25px 5px 20px;
+}
+
+.wt-dropcap.square {
+	background: #565656;
+	color: white;
+	padding: 5px 20px;
+	margin: 5px 30px 5px 0;
+}
+
+.wt-dropcap.circle {
+	background: #565656;
+	color: white;
+	padding: 5px 20px;
+	margin: 5px 30px 5px 0;
+	border-radius: 50%;
 }

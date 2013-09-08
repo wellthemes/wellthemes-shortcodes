@@ -15,6 +15,13 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
+#### v1.0 BETA - Updates 08.09.2013
+* Shadow separator added
+* Tabs shortcode redesign
+* Added style for dropcap
+* Fixed button active and hover state
+* Fixed colors
+
 #### v1.0 BETA - Updates 27.08.2013
 * Added `label` shortcode _colors, flat/shaded, rectangle/rounded_
 * Fixed messy background properties for panel shortcode
