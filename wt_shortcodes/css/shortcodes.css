@@ -163,11 +163,12 @@
 }
 
 .wt-button.size-small { padding: 3px 10px; font-size: 12px;}
-.wt-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
+.wt-button.size-medium { padding: 7px 18px; font-size: 14px; font-weight: bold; }
+.wt-button.size-big { padding: 10px 20px; font-size: 16px; font-weight: bold; }
 
 .wt-button.button-white,
 .wt-button.button-white.shaded:active { 
-	color: #999999; 
+	color: #999999 !important; 
 	background: #FFFFFF; 
 	border: 1px solid #e5e5e5;
 	border-bottom: 3px solid #e0e0e0; 
@@ -430,12 +431,18 @@
 }
 
 .wt-panel.shaded.green,
-.wt-button.shaded.button-green ,
 .wt-label.shaded.wt-label-green {
 	color: white;
 	background: #cdeb8e;
 	background: linear-gradient(#cdeb8e, #a5c956);
 	border: 1px solid #a5c956;
+}
+
+.wt-button.shaded.button-green {
+	color: white;
+	background: #cdeb8e;
+	background: linear-gradient(#00C942, #008A0A);
+	border: 1px solid #08740F;
 }
 
 .wt-panel.shaded.orange,
@@ -469,9 +476,9 @@
 .wt-button.shaded.button-white,
 .wt-label.shaded.wt-label-white {
 	color: #333;
-	background: #fcfff4;
-	background: linear-gradient(#fcfff4, #e9e9ce);
-	border: 1px solid #e9e9ce;
+	background: #fafafa;
+	background: linear-gradient(#fafafa, #e9e9e9);
+	border: 1px solid #ddd;
 }
 
 .wt-label {
