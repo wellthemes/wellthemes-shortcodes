@@ -15,7 +15,11 @@
 
 ## Changes log for WellThemes Shortcodes Plugin
 
-#### v1.0 BETA - Updates 08.09.2013
+#### v1.0.1 - Updates 14.10.2013
+* Better column shortcode
+
+#### v1.0 - Updates 08.09.2013
+* Many small fixes (version 1 release)
 * Shadow separator added
 * Tabs shortcode redesign
 * Added style for dropcap
