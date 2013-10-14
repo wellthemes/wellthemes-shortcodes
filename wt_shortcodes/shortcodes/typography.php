@@ -5,6 +5,7 @@
  * ---------------------------------------------------------------
  * 
  * List of the shortcodes in this file:
+ * - Column HoldeШраппер
  * - Column Shortcode
  * - Message Box
  * - Lists
@@ -17,7 +18,29 @@
  * - Label
  */
 
+/**
+ * COLUMN HOLDER
+ * ----------------------------------------------------------------
+ */
+function run_column_holder( $content ) {
+	global $shortcode_tags;
+	$orig_shortcode_tags = $shortcode_tags;
+	remove_all_shortcodes(); 
+	add_shortcode( 'col', 'wt_column_holder' );	
+	$content = do_shortcode( $content );
+	$shortcode_tags = $orig_shortcode_tags; 
+	return $content;
+} 
+add_filter( 'the_content', 'run_column_holder', 7 );
 
+if(!function_exists('wt_column_holder')) {
+	function wt_column_holder( $atts, $content = null)  {
+		return '<div class="col">' . do_shortcode( $content ) .  '</div>';
+	}
+
+	add_shortcode('col', 'wt_column_holder');
+
+}
 
 /**
  * COLUMN SHORTCODE
@@ -27,24 +50,11 @@ if (!function_exists('wt_column_shortcode')) {
 
 	function wt_column_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
-			'size' => '',
-			'last' => 'no',
+			'width' => '6',
 		), $atts));
-
-		$class1 = 'wt-column';		
-		if ($size != ''){
-			$class1  = 'wt-column-'.$size;
-		}
-		
-		$class2 = '';
-		if ($last == 'yes'){
-			$class2  = ' wt-column-last';
-		}
-		
-		$class = $class1.$class2;
 		
 		$content = do_shortcode($content);
-		$column = '<div class="'.$class.'">'.$content.'</div>';
+		$column = '<div class="col-'.$width.'">'.$content.'</div>';
 		
 		return $column;
 	}

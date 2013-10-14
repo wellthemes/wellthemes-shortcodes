@@ -24,12 +24,14 @@
 					c = b.addMenu({
 						title: "<i class='icon-columns'></i> Columns"
 					});
-					a.addImmediate( c, "One Half", "[column size='one-half' last='no'] Content goes here... [/column]<br /><br />");
-					a.addImmediate( c, "One Third", "[column size='one-third' last='no'] Content goes here... [/column]<br /><br />");
-					a.addImmediate( c, "One Fourth", "[column size='one-fourth' last='no'] Content goes here... [/column]<br /><br />");
-					a.addImmediate( c, "One Fifth", "[column size='one-fifth' last='no'] Content goes here... [/column]<br /><br />");
-					a.addImmediate( c, "One Sixth", "[column size='one-sixth' last='no'] Content goes here... [/column]<br /><br />");
-					
+					a.addImmediate( c, "Column Wrapper", "[col] Content goes here... [/col]<br /><br />");
+					a.addImmediate( c, "[6] - [6]", "[col][column width='6']Column 1[/column][column width='6']Column 2[/column][/col]");
+					a.addImmediate( c, "[4] - [4] - [4]", "[col][column width='4']Column 1[/column][column width='4']Column 2[/column][column width='4']Column 3[/column][/col]");
+					a.addImmediate( c, "[3] - [3] - [3] - [3]", "[col][column width='3']Column 1[/column][column width='3']Column 2[/column][column width='3']Column 3[/column][column width='3']Column 4[/column][/col]");
+					a.addImmediate( c, "[3] - [9]", "[col][column width='3']Column 1[/column][column width='9']Column 2[/column][/col]");
+					a.addImmediate( c, "[4] - [8]", "[col][column width='4']Column 1[/column][column width='8']Column 2[/column][/col]");
+
+
 					c = b.addMenu({
 						title: "<i class='icon-minus'></i> Message Boxes"
 					});
