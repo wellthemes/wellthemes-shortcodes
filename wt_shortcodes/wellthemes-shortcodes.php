@@ -1,15 +1,14 @@
 <?php
-/*
+/*  --------------------------------------------------------
 	Plugin Name: 	WellThemes Shortcodes
-	Version: 		1.0 Beta
+	Version: 		1.0
 	Description: 	Adds shortcodes to easily to your theme.
 	Author: 		WellThemes Team
 	Author URI: 	http://www.wellthemes.com
 	Plugin URI: 	http://www.wellthemes.com
 	Text Domain: 	wtshortcodes
 	License:		GPLv2
-	--------------------------------------------------------
-*/
+	--------------------------------------------------------  */
 
 /**
  * Add the shortcodes editor UI.
@@ -37,8 +36,8 @@ if( !function_exists ('wellthemes_shortcodes_scripts') ) :
 		wp_enqueue_style( 'font_awesome_stylesheet', plugin_dir_url( __FILE__ ) . 'css/font-awesome/css/font-awesome.min.css' );
 
 		//Register required scripts
-		// wp_register_script( 'wt_tabs', plugin_dir_url( __FILE__ ) . 'js/wt_tabs.js', array ( 'jquery', 'jquery-ui-tabs'), '1.0', true );
-		// wp_register_script( 'wt_slider', plugin_dir_url( __FILE__ ) . 'js/unslider.min.js', array ( 'jquery'), '1.0', true );
+		wp_register_script( 'wt_tabs', plugin_dir_url( __FILE__ ) . 'js/wt_tabs.js', array ( 'jquery', 'jquery-ui-tabs'), '1.0', true );
+		wp_register_script( 'wt_slider', plugin_dir_url( __FILE__ ) . 'js/unslider.min.js', array ( 'jquery'), '1.0', true );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'wellthemes_shortcodes_scripts' );

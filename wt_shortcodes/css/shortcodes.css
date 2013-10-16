@@ -23,82 +23,87 @@
  * Only precentage were used, so that the sizes will fit 
  * perfectly in any content width. 
  * */
-.wt-col-1,
-.wt-col-2,
-.wt-col-3,
-.wt-col-4,
-.wt-col-5,
-.wt-col-6,
-.wt-col-7,
-.wt-col-8,
-.wt-col-9,
-.wt-col-10,
-.wt-col-11 {
-	float: left;
-	position: relative;
-	padding-right: 7.5px;
-	padding-left: 7.5px;
-}
-.wt-col-1 {
-	width: 8.333333333333332%;
-}
-.wt-col-2 {
-	width: 16.666666666666664%;
-}
-.wt-col-3 {
-	width: 25%;
-}
-.wt-col-4 {
-	width: 33.33333333333333%;
-}
-.wt-col-5 {
-	width: 41.66666666666667%;
-}
-.wt-col-6 {
-	width: 50%;
-}
-.wt-col-7 {
-	width: 58.333333333333336%;
-}
-.wt-col-8 {
-	width: 66.66666666666666%;
-}
-.wt-col-9 {
-	width: 75%;
-}
-.wt-col-10 {
-	width: 83.33333333333334%;
-}
-.wt-col-11 {
-	width: 91.66666666666666%;
-}
-.wt-col-12 {
-	width: 100%;
-}
 
-/* Column Stylings */
 .wt-row {
-	margin-right: -7.5px;
-	margin-left: -7.5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wt-row .one-half { 
+	width: 48%; 
+}
+
+.wt-row  .one-third { 
+	width: 30.6666%; 
+}
+
+.wt-row  .two-third { 
+	width: 65.3332%; 
+}
+
+.wt-row  .one-fourth { 
+	width: 22%; 
+}
+
+.wt-row  .three-fourth { 
+	width: 74%; 
+}
+
+.wt-row  .one-fifth {
+	width: 16.8%; 
+}
+
+.wt-row  .two-fifth { 
+	width: 37.6%; 
+}
+
+.wt-row  .three-fifth { 
+	width: 58.4%; 
+}
+
+.wt-row  .four-fifth { 
+	width: 79.2%; 
+}
+
+.wt-row  .one-sixth {
+	width: 13.3333%; 
+}
+
+.wt-row  .two-sixth {
+	width: 30.6666%; 
+}
+
+.wt-row  .three-sixth {
+	width: 47.9998%; 
+}
+
+.wt-row  .four-sixth {
+	width: 65.3332%; 
+}
+
+.wt-row  .five-sixth {
+	width: 82.6665%;
 }
 
 
-.wt-row:before,
-.wt-row:after {
-	content: " ";
-	display: table;
+.wt-row .one-half, 
+.wt-row .one-third, 
+.wt-row .two-third, 
+.wt-row .one-fourth, 
+.wt-row .three-fourth, 
+.wt-row .one-fifth, 
+.wt-row .two-fifth, 
+.wt-row .three-fifth, 
+.wt-row .four-fifth, 
+.wt-row .one-sixth, 
+.wt-row .five-sixth { 
+	position: relative; 
+	margin-right: 4%; 
+	float: left; 
+	min-height: 1px;
 }
-.wt-row:after {
-	clear: both;
-}
-.wt-row:before,
-.wt-row:after {
-	content: " ";
-	display: table;
-}
-.wt-row:after {
-	clear: both;
-}
+
+.wt-row .wt-column-last { margin-right: 0; }
 
 /*
  * Message boxes
@@ -201,11 +206,12 @@
 }
 
 .wt-button.size-small { padding: 3px 10px; font-size: 12px;}
-.wt-button.size-large { padding: 10px 20px; font-size: 16px; font-weight: bold; }
+.wt-button.size-medium { padding: 7px 18px; font-size: 14px; font-weight: bold; }
+.wt-button.size-big { padding: 10px 20px; font-size: 16px; font-weight: bold; }
 
 .wt-button.button-white,
 .wt-button.button-white.shaded:active { 
-	color: #999999; 
+	color: #999999 !important; 
 	background: #FFFFFF; 
 	border: 1px solid #e5e5e5;
 	border-bottom: 3px solid #e0e0e0; 
@@ -468,12 +474,18 @@
 }
 
 .wt-panel.shaded.green,
-.wt-button.shaded.button-green ,
 .wt-label.shaded.wt-label-green {
 	color: white;
 	background: #cdeb8e;
 	background: linear-gradient(#cdeb8e, #a5c956);
 	border: 1px solid #a5c956;
+}
+
+.wt-button.shaded.button-green {
+	color: white;
+	background: #cdeb8e;
+	background: linear-gradient(#00C942, #008A0A);
+	border: 1px solid #08740F;
 }
 
 .wt-panel.shaded.orange,
@@ -507,9 +519,9 @@
 .wt-button.shaded.button-white,
 .wt-label.shaded.wt-label-white {
 	color: #333;
-	background: #fcfff4;
-	background: linear-gradient(#fcfff4, #e9e9ce);
-	border: 1px solid #e9e9ce;
+	background: #fafafa;
+	background: linear-gradient(#fafafa, #e9e9e9);
+	border: 1px solid #ddd;
 }
 
 .wt-label {

@@ -5,7 +5,6 @@
  * ---------------------------------------------------------------
  * 
  * List of the shortcodes in this file:
- * - Column HoldeШраппер
  * - Column Shortcode
  * - Message Box
  * - Lists
@@ -23,22 +22,22 @@
  * ----------------------------------------------------------------
  */
 function run_column_holder( $content ) {
-	global $shortcode_tags;
-	$orig_shortcode_tags = $shortcode_tags;
-	remove_all_shortcodes(); 
-	add_shortcode( 'col', 'wt_column_holder' );	
-	$content = do_shortcode( $content );
-	$shortcode_tags = $orig_shortcode_tags; 
-	return $content;
+        global $shortcode_tags;
+        $orig_shortcode_tags = $shortcode_tags;
+        remove_all_shortcodes(); 
+        add_shortcode( 'col', 'wt_column_holder' );        
+        $content = do_shortcode( $content );
+        $shortcode_tags = $orig_shortcode_tags; 
+        return $content;
 } 
 add_filter( 'the_content', 'run_column_holder', 7 );
 
 if(!function_exists('wt_column_holder')) {
-	function wt_column_holder( $atts, $content = null)  {
-		return '<div class="wt-row">' . do_shortcode( $content ) .  '</div>';
-	}
+        function wt_column_holder( $atts, $content = null)  {
+                return '<div class="wt-row">' . do_shortcode( $content ) .  '</div>';
+        }
 
-	add_shortcode('wt-row', 'wt_column_holder');
+        add_shortcode('wt-row', 'wt_column_holder');
 
 }
 
@@ -50,16 +49,26 @@ if (!function_exists('wt_column_shortcode')) {
 
 	function wt_column_shortcode( $atts, $content = null ) {
 		extract(shortcode_atts(array(
-			'width' => '6',
+			'width' => '',
+			'last' => 'no',
 		), $atts));
+	
+		$class1  =$width;
+		
+		$class2 = '';
+		if ($last == 'true'){
+			$class2  = ' wt-column-last';
+		}
+		
+		$class = $class1.$class2;
 		
 		$content = do_shortcode($content);
-		$column = '<div class="wt-col-'.$width.'">'.$content.'</div>';
+		$column = '<div class="'.$class.'">'.$content.'</div>';
 		
 		return $column;
 	}
 	
-	add_shortcode('column', 'wt_column_shortcode');
+	add_shortcode('wt-column', 'wt_column_shortcode');
 
 }
 
