@@ -24,11 +24,12 @@
 					c = b.addMenu({
 						title: "<i class='icon-columns'></i> Columns"
 					});
-					a.addImmediate( c, "1/2 | 1/2", "[col][column width='6']Column 1[/column][column width='6']Column 2[/column][/col]");
-					a.addImmediate( c, "1/3 | 1/3 | 1/3", "[col][column width='4']Column 1[/column][column width='4']Column 2[/column][column width='4']Column 3[/column][/col]");
-					a.addImmediate( c, "1/4 | 1/4 | 1/4 | 1/4", "[col][column width='3']Column 1[/column][column width='3']Column 2[/column][column width='3']Column 3[/column][column width='3']Column 4[/column][/col]");
-					a.addImmediate( c, "1/4 | 4/3", "[col][column width='3']Column 1[/column][column width='9']Column 2[/column][/col]");
-					a.addImmediate( c, "1/3 | 2/3", "[col][column width='4']Column 1[/column][column width='8']Column 2[/column][/col]");
+					a.addImmediate( c, "Column Wrapper", "[wt-row] Content goes here... [/wt-row]<br /><br />");
+					a.addImmediate( c, "1/2 | 1/2", "[wt-row][column width='6']Column 1[/column][column width='6']Column 2[/column][/wt-row]");
+					a.addImmediate( c, "1/3 | 1/3 | 1/3", "[wt-row][column width='4']Column 1[/column][column width='4']Column 2[/column][column width='4']Column 3[/column][/wt-row]");
+					a.addImmediate( c, "1/4 | 1/4 | 1/4 | 1/4", "[wt-row][column width='3']Column 1[/column][column width='3']Column 2[/column][column width='3']Column 3[/column][column width='3']Column 4[/column][/wt-row]");
+					a.addImmediate( c, "1/4 | 4/3", "[wt-row][column width='3']Column 1[/column][column width='9']Column 2[/column][/wt-row]");
+					a.addImmediate( c, "1/3 | 2/3", "[wt-row][column width='4']Column 1[/column][column width='8']Column 2[/column][/wt-row]");
 
 
 					c = b.addMenu({

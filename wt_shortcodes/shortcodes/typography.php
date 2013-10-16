@@ -35,10 +35,10 @@ add_filter( 'the_content', 'run_column_holder', 7 );
 
 if(!function_exists('wt_column_holder')) {
 	function wt_column_holder( $atts, $content = null)  {
-		return '<div class="col">' . do_shortcode( $content ) .  '</div>';
+		return '<div class="wt-row">' . do_shortcode( $content ) .  '</div>';
 	}
 
-	add_shortcode('col', 'wt_column_holder');
+	add_shortcode('wt-row', 'wt_column_holder');
 
 }
 
@@ -54,7 +54,7 @@ if (!function_exists('wt_column_shortcode')) {
 		), $atts));
 		
 		$content = do_shortcode($content);
-		$column = '<div class="col-'.$width.'">'.$content.'</div>';
+		$column = '<div class="wt-col-'.$width.'">'.$content.'</div>';
 		
 		return $column;
 	}
