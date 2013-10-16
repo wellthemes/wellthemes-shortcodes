@@ -13,8 +13,8 @@
 				
 				// creates the button
 				var btn = e.createSplitButton('wellthemes_button', {
-                    title: "Insert Shortcodes", 										// title of the button
-					image: wellthemesShortCodes.plugin_folder +"/js/images/icon.png", 	// path to the button's image
+                    title: "Insert Shortcodes", // title of the button
+					image: wellthemesShortCodes.plugin_folder +"/js/images/icon.png", // path to the button's image
 					icons: false
                 });
 				
@@ -49,7 +49,7 @@
 					c = b.addMenu({
 						title: "<i class='icon-font'></i> Typography"
 					});
-					a.addImmediate( c, "Button", "[button type='flat, shaded' url='#' icon='ok' color='white, red, blue, orange, black, green, magenta' size='small, medium, big' target='_blank'id=''] Button text... [/button]");
+					a.addImmediate( c, "Button", "[button type='flat, shaded' url='#' icon='ok' color='white, red, blue, orange, black, green, magente' size='small, medium, big' target='_blank'id=''] Button text... [/button]");
 					a.addImmediate( c, "Highlight", "[highlight color='yellow'] Content goes here... [/highlight]");
 					a.addImmediate( c, "Spoiler", "[spoiler] Content goes here... [/spoiler]");
 					a.addImmediate( c, "Dropcap", "[dropcap style='square']A[/dropcap]");
@@ -88,13 +88,14 @@
 					});
 					a.addImmediate( c, "Recent Posts List", "[recent_posts title='Recent Posts' limit='5' order='ASC' category='0']");
 					a.addImmediate( c, "Authors", "[print_authors display_posts=true exclude_admin=false show_fullname=true hide_empty=false]");
-					// a.addImmediate( c, "List Pages", "[list_pages]");
+					a.addImmediate( c, "List Pages", "[list_pages]");
+
 					
 					c = b.addMenu({
 						title: "<i class='icon-list-alt'></i> Elements"
 					});
 					a.addImmediate( c, "Search Form", "[search button_text='Search']");
-					a.addImmediate( c, "Content separator", "[separator type='line, double-line, dotted, shadow-1' height='small, medium, big, huge' ]");
+					a.addImmediate( c, "Content separator", "[separator type='line, double-line, dotted, shadow-1, shadow-2' height='small, medium, big, huge' ]");
 					a.addImmediate( c, "Lightbox Image", "[lightbox_image src='' bigimage='' title='Image']<br>" );
 					a.addImmediate( c, "Tabs", "[tabs]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='First Tab'] Content goes here... [/tab]<br />&nbsp;&nbsp;&nbsp;&nbsp;[tab title='Second Tab'] Content goes here... [/tab]<br />[/tabs]<br /><br />" );
 					a.addImmediate( c, "Slider", "[slider speed='500' delay='3000' nav='yes']<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='First Slide'] Content goes here... [/slide]<br />&nbsp;&nbsp;&nbsp;&nbsp;[slide title='Second Slide'] Content goes here... [/slide]<br />[/slider]<br /><br />" );

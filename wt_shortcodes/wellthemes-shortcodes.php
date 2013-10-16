@@ -1,14 +1,15 @@
 <?php
-/*  --------------------------------------------------------
+/*
 	Plugin Name: 	WellThemes Shortcodes
-	Version: 		1.0
+	Version: 		1.0 Beta
 	Description: 	Adds shortcodes to easily to your theme.
 	Author: 		WellThemes Team
 	Author URI: 	http://www.wellthemes.com
 	Plugin URI: 	http://www.wellthemes.com
 	Text Domain: 	wtshortcodes
 	License:		GPLv2
-	--------------------------------------------------------  */
+	--------------------------------------------------------
+*/
 
 /**
  * Add the shortcodes editor UI.
